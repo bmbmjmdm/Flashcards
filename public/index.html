@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Studies Flashcards</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Persistent Study Session</p>
+          <h1>Social Studies Flashcards</h1>
+          <p class="lede">
+            Click the card to reveal the answer, then grade yourself. The schedule is saved
+            locally so you can pause anytime and continue exactly where you stopped.
+          </p>
+        </div>
+        <div class="meta-grid">
+          <div>
+            <span class="label">Total</span>
+            <span class="value" data-total>0</span>
+          </div>
+          <div>
+            <span class="label">Remaining</span>
+            <span class="value" data-remaining>0</span>
+          </div>
+          <div>
+            <span class="label">Due Now</span>
+            <span class="value" data-due>0</span>
+          </div>
+          <div>
+            <span class="label">Retired</span>
+            <span class="value" data-retired>0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="card-stage">
+        <div class="card" data-card>
+          <div class="card-face card-face--front">
+            <p class="card-kicker">Question</p>
+            <p class="card-body" data-question>Loading deck…</p>
+          </div>
+          <div class="card-face card-face--back">
+            <p class="card-kicker">Answer</p>
+            <p class="card-body" data-answer>Hang tight…</p>
+          </div>
+        </div>
+        <p class="card-hint" data-card-hint>Tap the card to reveal the answer.</p>
+        <p class="card-hint" data-empty-hint hidden>
+          You have cleared every active card. Switch ratings to bring some back or add new prompts.
+        </p>
+      </section>
+
+      <section class="rating-panel">
+        <button class="pill" data-rating="trivial" title="Mastered forever">Trivial</button>
+        <button class="pill" data-rating="easy" title="See again much later">Easy</button>
+        <button class="pill" data-rating="normal" title="See again after a fair break">Normal</button>
+        <button class="pill" data-rating="hard" title="See again very soon">Hard</button>
+      </section>
+
+      <section class="status-panel">
+        <div>
+          <p class="label">Session status</p>
+          <p class="status" data-status>Fetching flashcards…</p>
+        </div>
+        <div>
+          <p class="label">Next review</p>
+          <p class="status" data-next-review>—</p>
+        </div>
+        <div>
+          <p class="label">Last action</p>
+          <p class="status" data-last-action>—</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

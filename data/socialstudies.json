@@ -1,0 +1,1274 @@
+[
+  {
+    "question": "What is the name of Norway’s state pension fund built from oil revenues?",
+    "answer": "The Government Pension Fund Global (Oljefondet)."
+  },
+  {
+    "question": "What is the purpose of the “fastlegeordningen”?",
+    "answer": "To ensure everyone has a regular doctor and equal access to healthcare."
+  },
+  {
+    "question": "What does “egenandel” mean in Norwegian healthcare?",
+    "answer": "The patient’s out-of-pocket co-payment for health services."
+  },
+  {
+    "question": "What happens when you reach the annual maximum for “egenandel”?",
+    "answer": "You receive an exemption card (frikort) and no longer pay co-payments that year."
+  },
+  {
+    "question": "What is “folketrygden”?",
+    "answer": "Norway’s national social insurance scheme."
+  },
+  {
+    "question": "What benefits are covered by folketrygden?",
+    "answer": "Healthcare, pensions, disability benefits, unemployment support, and parental benefits."
+  },
+  {
+    "question": "At what age do children in Norway usually start primary school?",
+    "answer": "At age 6."
+  },
+  {
+    "question": "Is kindergarten (barnehage) mandatory in Norway?",
+    "answer": "No, it is voluntary."
+  },
+  {
+    "question": "How many years of compulsory education are there in Norway?",
+    "answer": "10 years."
+  },
+  {
+    "question": "What is the legal minimum working age in Norway?",
+    "answer": "15 years (with restrictions)."
+  },
+  {
+    "question": "What law regulates working conditions in Norway?",
+    "answer": "The Working Environment Act (Arbeidsmiljøloven)."
+  },
+  {
+    "question": "What is feriepenge (holiday pay)?",
+    "answer": "Money earned the previous year to cover income during vacation."
+  },
+  {
+    "question": "Are employees legally entitled to paid vacation in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "How many weeks of vacation are most employees entitled to each year?",
+    "answer": "At least 4 weeks and 1 day."
+  },
+  {
+    "question": "What is a trade union’s role in Norway?",
+    "answer": "To protect workers’ rights and negotiate wages and conditions."
+  },
+  {
+    "question": "Is union membership mandatory in Norway?",
+    "answer": "No."
+  },
+  {
+    "question": "What is an apprenticeship called in Norwegian?",
+    "answer": "Læretid."
+  },
+  {
+    "question": "How long does upper secondary education usually last?",
+    "answer": "Three years (or two years plus apprenticeship)."
+  },
+  {
+    "question": "What year was the Norwegian Constitution signed?",
+    "answer": "1814."
+  },
+  {
+    "question": "Where was the Norwegian Constitution written and signed?",
+    "answer": "Eidsvoll."
+  },
+  {
+    "question": "What union did Norway leave in 1814?",
+    "answer": "The union with Denmark."
+  },
+  {
+    "question": "Which country did Norway enter a union with after 1814?",
+    "answer": "Sweden."
+  },
+  {
+    "question": "When did Norway become fully independent?",
+    "answer": "1905."
+  },
+  {
+    "question": "How did Norway decide to end the union with Sweden?",
+    "answer": "Through a referendum."
+  },
+  {
+    "question": "Who became Norway’s king after independence in 1905?",
+    "answer": "King Haakon VII."
+  },
+  {
+    "question": "What form of government does Norway have?",
+    "answer": "A constitutional monarchy."
+  },
+  {
+    "question": "What is Norway’s national parliament called?",
+    "answer": "The Storting."
+  },
+  {
+    "question": "How many representatives are in the Storting?",
+    "answer": "169."
+  },
+  {
+    "question": "How often are parliamentary elections held in Norway?",
+    "answer": "Every four years."
+  },
+  {
+    "question": "Does Norway allow early dissolution of parliament?",
+    "answer": "No."
+  },
+  {
+    "question": "What is the role of the Prime Minister?",
+    "answer": "To lead the government."
+  },
+  {
+    "question": "What branch of government proposes new laws?",
+    "answer": "The government."
+  },
+  {
+    "question": "Who formally signs laws in Norway?",
+    "answer": "The King (as a constitutional formality)."
+  },
+  {
+    "question": "What does “ytringsfrihet” mean?",
+    "answer": "Freedom of expression."
+  },
+  {
+    "question": "Is freedom of religion protected in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is the emergency number for police in Norway?",
+    "answer": "112."
+  },
+  {
+    "question": "What is the emergency number for fire services?",
+    "answer": "110."
+  },
+  {
+    "question": "What is the emergency number for medical emergencies?",
+    "answer": "113."
+  },
+  {
+    "question": "What languages are officially recognized in Norway?",
+    "answer": "Norwegian (Bokmål and Nynorsk) and Sami languages."
+  },
+  {
+    "question": "Who are the Sami?",
+    "answer": "The indigenous people of parts of Norway, Sweden, Finland, and Russia."
+  },
+  {
+    "question": "Does Norway have a Sami parliament?",
+    "answer": "Yes, the Sámediggi."
+  },
+  {
+    "question": "What does the Sámediggi represent?",
+    "answer": "Sami political and cultural interests."
+  },
+  {
+    "question": "Is discrimination illegal in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What areas are protected from discrimination by law?",
+    "answer": "Gender, ethnicity, religion, disability, sexual orientation, and more."
+  },
+  {
+    "question": "Are men and women legally equal in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is Norway’s general approach to gender equality?",
+    "answer": "Active promotion of equal rights and opportunities."
+  },
+  {
+    "question": "What energy source provides most of Norway’s electricity?",
+    "answer": "Hydropower."
+  },
+  {
+    "question": "Is Norway a member of the European Union?",
+    "answer": "No."
+  },
+  {
+    "question": "What does “kommunen” mean in Norway’s administrative system?",
+    "answer": "A municipality, responsible for local services."
+  },
+  {
+    "question": "What services are municipalities responsible for?",
+    "answer": "Schools, kindergartens, primary healthcare, and local infrastructure."
+  },
+  {
+    "question": "What is a “fylke”?",
+    "answer": "A county-level administrative region."
+  },
+  {
+    "question": "What responsibilities do counties (fylker) have?",
+    "answer": "Upper secondary education, public transport, and regional development."
+  },
+  {
+    "question": "How are municipal council members chosen?",
+    "answer": "Through local elections."
+  },
+  {
+    "question": "How often are local elections held in Norway?",
+    "answer": "Every four years."
+  },
+  {
+    "question": "Can foreign residents vote in local elections?",
+    "answer": "Yes, after a certain period of legal residence."
+  },
+  {
+    "question": "How long must non-Nordic foreigners live in Norway to vote locally?",
+    "answer": "At least three years."
+  },
+  {
+    "question": "What is “statsborgerskap”?",
+    "answer": "Citizenship."
+  },
+  {
+    "question": "Is permanent residence the same as citizenship?",
+    "answer": "No."
+  },
+  {
+    "question": "What responsibilities do residents have toward the Norwegian state?",
+    "answer": "Paying taxes and following laws."
+  },
+  {
+    "question": "What agency collects taxes in Norway?",
+    "answer": "The Norwegian Tax Administration (Skatteetaten)."
+  },
+  {
+    "question": "What is “skattekort”?",
+    "answer": "A tax deduction card showing how much tax should be withheld."
+  },
+  {
+    "question": "What happens if you do not submit a tax return?",
+    "answer": "You may receive penalties or fines."
+  },
+  {
+    "question": "What is NAV?",
+    "answer": "The Norwegian Labour and Welfare Administration."
+  },
+  {
+    "question": "What services does NAV provide?",
+    "answer": "Unemployment benefits, pensions, disability support, and social assistance."
+  },
+  {
+    "question": "What is required to receive unemployment benefits?",
+    "answer": "Previous employment and active job seeking."
+  },
+  {
+    "question": "Are unemployment benefits permanent?",
+    "answer": "No."
+  },
+  {
+    "question": "What is “sosialhjelp”?",
+    "answer": "Financial assistance for people with no other income."
+  },
+  {
+    "question": "Who can apply for social assistance?",
+    "answer": "Residents who cannot support themselves financially."
+  },
+  {
+    "question": "What is the purpose of parental leave in Norway?",
+    "answer": "To allow parents to care for a newborn or adopted child."
+  },
+  {
+    "question": "Is parental leave paid in Norway?",
+    "answer": "Yes, under certain conditions."
+  },
+  {
+    "question": "Are fathers entitled to parental leave?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is “fedrekvoten”?",
+    "answer": "The father’s quota of parental leave."
+  },
+  {
+    "question": "What is “barnetrygd”?",
+    "answer": "Child benefit paid to families with children."
+  },
+  {
+    "question": "Is child benefit means-tested?",
+    "answer": "No."
+  },
+  {
+    "question": "What rights do children have under Norwegian law?",
+    "answer": "The right to care, education, and protection."
+  },
+  {
+    "question": "Is physical punishment of children legal in Norway?",
+    "answer": "No."
+  },
+  {
+    "question": "What authority protects children’s rights in Norway?",
+    "answer": "Child welfare services (Barnevernet)."
+  },
+  {
+    "question": "When can child welfare services intervene?",
+    "answer": "When a child’s health or development is at risk."
+  },
+  {
+    "question": "Is education free in Norway?",
+    "answer": "Yes, including higher education at public institutions."
+  },
+  {
+    "question": "Do students pay tuition at public universities?",
+    "answer": "No (with some exceptions for non-EU/EEA students)."
+  },
+  {
+    "question": "What is “Lånekassen”?",
+    "answer": "The state agency that provides student loans and grants."
+  },
+  {
+    "question": "What is the main purpose of higher education in Norway?",
+    "answer": "To provide knowledge, skills, and research."
+  },
+  {
+    "question": "Are students entitled to a safe learning environment?",
+    "answer": "Yes."
+  },
+  {
+    "question": "Is discrimination in schools illegal?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What happens if a student is bullied?",
+    "answer": "The school is legally required to act."
+  },
+  {
+    "question": "What is lifelong learning?",
+    "answer": "Continuous education throughout life."
+  },
+  {
+    "question": "Why does Norway promote lifelong learning?",
+    "answer": "To adapt to changes in society and the labor market."
+  },
+  {
+    "question": "Who funds public education in Norway?",
+    "answer": "The state and municipalities."
+  },
+  {
+    "question": "What year did Germany invade Norway?",
+    "answer": "1940."
+  },
+  {
+    "question": "How long did the German occupation last?",
+    "answer": "Until 1945."
+  },
+  {
+    "question": "What was Norway’s role during World War II?",
+    "answer": "It was occupied by Nazi Germany."
+  },
+  {
+    "question": "What happened to Norway’s government during the occupation?",
+    "answer": "It went into exile in the UK."
+  },
+  {
+    "question": "Who led the collaborationist government in Norway?",
+    "answer": "Vidkun Quisling."
+  },
+  {
+    "question": "What does the word “quisling” now mean internationally?",
+    "answer": "A traitor or collaborator."
+  },
+  {
+    "question": "When did Norway join NATO?",
+    "answer": "1949."
+  },
+  {
+    "question": "Why did Norway join NATO?",
+    "answer": "For collective security and defense."
+  },
+  {
+    "question": "Does Norway have compulsory military service?",
+    "answer": "Yes, for both men and women."
+  },
+  {
+    "question": "Is military service mandatory for everyone?",
+    "answer": "No, only for those selected."
+  },
+  {
+    "question": "What is grunnskole in Norway?",
+    "answer": "Norway’s compulsory primary and lower secondary school (grades 1–10)."
+  },
+  {
+    "question": "What is videregående skole in Norway?",
+    "answer": "Upper secondary school (high school), optional education after grunnskole."
+  },
+  {
+    "question": "What age do children normally start barnehage in Norway?",
+    "answer": "Before primary school, for preschool-age children (typically ages 1–5)."
+  },
+  {
+    "question": "What is egenandel in Norway’s health system?",
+    "answer": "The patient’s co-payment for health services."
+  },
+  {
+    "question": "What does arbeidsliv refer to?",
+    "answer": "Working life / Norwegian labour market."
+  },
+  {
+    "question": "What is the purpose of kritisk tenkning in society?",
+    "answer": "To think critically and judge digital information responsibly."
+  },
+  {
+    "question": "In Norway, what is personlig økonomi?",
+    "answer": "Personal finances (managing money, budgeting, taxes)."
+  },
+  {
+    "question": "What does rett til et fritt og uavhengig liv mean?",
+    "answer": "The right to a free and independent life for people with disabilities."
+  },
+  {
+    "question": "What do familier learn about on .no?",
+    "answer": "Family roles, responsibilities, rights, and support systems."
+  },
+  {
+    "question": "What are fritidsaktiviteter in Norway?",
+    "answer": "Leisure activities like sports, outdoor life, culture."
+  },
+  {
+    "question": "What is helse about in the curriculum?",
+    "answer": "Health services, preventive care, and how the health system works."
+  },
+  {
+    "question": "What is included in nye i Norge texts?",
+    "answer": "Information for newcomers about everyday life, rights, and society."
+  },
+  {
+    "question": "What are oppgaver on .no meant for?",
+    "answer": "Practice tasks to help you learn and understand the topics."
+  },
+  {
+    "question": "Which part of Norwegian history focuses on Norge før og nå?",
+    "answer": "Norway’s past and how it has developed up to today."
+  },
+  {
+    "question": "What does menneskerettigheter mean?",
+    "answer": "Human rights protected in Norwegian society."
+  },
+  {
+    "question": "What is the main idea behind demokrati?",
+    "answer": "Government by the people, through elected representatives."
+  },
+  {
+    "question": "What is bærekraft?",
+    "answer": "Sustainability — protecting the environment and resources."
+  },
+  {
+    "question": "What does Dette er Norge cover?",
+    "answer": "Information about Norwegian society, culture, geography, and values."
+  },
+  {
+    "question": "What is arbeidsmiljøloven concerned with?",
+    "answer": "Working environment law protecting employees."
+  },
+  {
+    "question": "What is a lærling in Norway?",
+    "answer": "An apprentice training in a trade while working."
+  },
+  {
+    "question": "What is foreldrepermisjon?",
+    "answer": "Parental leave benefits for mothers and fathers."
+  },
+  {
+    "question": "How many questions are on the official social studies test?",
+    "answer": "38 questions.\nHK-dir"
+  },
+  {
+    "question": "To pass the social studies test, how many correct answers do you need?",
+    "answer": "At least 26 correct answers.\nHK-dir"
+  },
+  {
+    "question": "What language options are available for the social studies test?",
+    "answer": "You can take it in one of 23 languages.\nHK-dir"
+  },
+  {
+    "question": "What is skole og utdanning about?",
+    "answer": "School systems and education levels in Norway."
+  },
+  {
+    "question": "What topic does arbeidsliv og kompetanse cover?",
+    "answer": "Work life and skills needed for the labour market."
+  },
+  {
+    "question": "What is a kommune responsible for?",
+    "answer": "Local services like schools, health, and social services."
+  },
+  {
+    "question": "What does helsetjenester mean?",
+    "answer": "Health services available to residents."
+  },
+  {
+    "question": "What is skatt?",
+    "answer": "Tax — money paid to the government for public services."
+  },
+  {
+    "question": "What is valg in Norway?",
+    "answer": "Election — a vote to choose representatives."
+  },
+  {
+    "question": "How long is the Storting elected for?",
+    "answer": "Four years."
+  },
+  {
+    "question": "What is Norway’s national legislature called?",
+    "answer": "The Storting."
+  },
+  {
+    "question": "What rights do residents have in Norway?",
+    "answer": "Freedom of expression, equality before the law, etc."
+  },
+  {
+    "question": "What does likestilling mean?",
+    "answer": "Equality between people."
+  },
+  {
+    "question": "What is demokratisk deltakelse?",
+    "answer": "Participating in democracy, such as voting."
+  },
+  {
+    "question": "What is the purpose of velferdsordninger?",
+    "answer": "Welfare systems to support people (health, social security)."
+  },
+  {
+    "question": "What region is Norway located in?",
+    "answer": "Northern Europe / Scandinavia."
+  },
+  {
+    "question": "What is høyere utdanning?",
+    "answer": "Higher education (college/university)."
+  },
+  {
+    "question": "What is arbeidskontrakt?",
+    "answer": "Work contract between employee and employer."
+  },
+  {
+    "question": "What is the EU/EØS relationship relevant to Norway?",
+    "answer": "Cooperation through the European Economic Area (EØS)."
+  },
+  {
+    "question": "What do helserettigheter include?",
+    "answer": "Rights to necessary healthcare."
+  },
+  {
+    "question": "What is trygd?",
+    "answer": "Social security benefits."
+  },
+  {
+    "question": "What awareness is digital dømmekraft about?",
+    "answer": "Being careful and critical online."
+  },
+  {
+    "question": "What does samfunnsverdier refer to?",
+    "answer": "Social values like equality and respect."
+  },
+  {
+    "question": "What is norsk kultur?",
+    "answer": "Norwegian culture — traditions, language, society."
+  },
+  {
+    "question": "What is historie in the curriculum?",
+    "answer": "Norway’s past, including key historical events."
+  },
+  {
+    "question": "What is mediakompetanse?",
+    "answer": "Media literacy — understanding media content."
+  },
+  {
+    "question": "Why is arbeidsmarkedet taught?",
+    "answer": "To understand job opportunities and rights in Norway."
+  },
+  {
+    "question": "What is bruk av skolenettsteder?",
+    "answer": "Using school websites and resources for learning."
+  },
+  {
+    "question": "What is likestillingsloven about?",
+    "answer": "The equality law banning discrimination."
+  },
+  {
+    "question": "What does internasjonalt samarbeid refer to?",
+    "answer": "Norway’s cooperation with other countries."
+  },
+  {
+    "question": "What are rettigheter og plikter?",
+    "answer": "Rights and duties as a resident in Norway."
+  },
+  {
+    "question": "What does samfunnsansvar mean?",
+    "answer": "Social responsibility."
+  },
+  {
+    "question": "What is vold og konflikthåndtering referring to?",
+    "answer": "Violence and conflict handling in society."
+  },
+  {
+    "question": "What does forbrukerrettigheter include?",
+    "answer": "Consumer rights protecting buyers."
+  },
+  {
+    "question": "What is ungdom og samfunn about?",
+    "answer": "Youth and society topics."
+  },
+  {
+    "question": "What are samiske rettigheter?",
+    "answer": "Rights of the Sami people."
+  },
+  {
+    "question": "What does beredskap refer to?",
+    "answer": "Preparedness for emergencies."
+  },
+  {
+    "question": "What is the significance of folketrygden?",
+    "answer": "The Norwegian national insurance system."
+  },
+  {
+    "question": "What does “lik rett til utdanning” mean in Norway?",
+    "answer": "Everyone has equal rights to education regardless of background."
+  },
+  {
+    "question": "What is the purpose of compulsory schooling in Norway?",
+    "answer": "To ensure all children gain basic knowledge and skills."
+  },
+  {
+    "question": "What responsibility do parents have for children’s education?",
+    "answer": "To ensure children attend compulsory school."
+  },
+  {
+    "question": "What does “tilpasset opplæring” mean?",
+    "answer": "Education adapted to each student’s abilities and needs."
+  },
+  {
+    "question": "What is special education intended for?",
+    "answer": "Students who need extra support in learning."
+  },
+  {
+    "question": "What is the main goal of the Norwegian welfare state?",
+    "answer": "To ensure security and equal opportunities for all residents."
+  },
+  {
+    "question": "How is the welfare state funded?",
+    "answer": "Through taxes and public contributions."
+  },
+  {
+    "question": "What does “arbeid og inntekt” emphasize in Norwegian society?",
+    "answer": "Work is the main source of income and welfare."
+  },
+  {
+    "question": "What is expected of people who can work?",
+    "answer": "That they support themselves through work if possible."
+  },
+  {
+    "question": "What is “aktiv jobbsøking” required for?",
+    "answer": "To receive unemployment benefits."
+  },
+  {
+    "question": "What is a written employment contract required to include?",
+    "answer": "Job duties, pay, working hours, and notice period."
+  },
+  {
+    "question": "Is discrimination in hiring legal in Norway?",
+    "answer": "No."
+  },
+  {
+    "question": "What factors are protected against discrimination in employment?",
+    "answer": "Gender, ethnicity, religion, disability, age, and sexual orientation."
+  },
+  {
+    "question": "What is “likelønn”?",
+    "answer": "Equal pay for equal work."
+  },
+  {
+    "question": "What does “heltid” mean?",
+    "answer": "Full-time employment."
+  },
+  {
+    "question": "What does “deltid” mean?",
+    "answer": "Part-time employment."
+  },
+  {
+    "question": "What is a notice period in employment?",
+    "answer": "Time required before ending a job."
+  },
+  {
+    "question": "What protection do employees have against unfair dismissal?",
+    "answer": "Legal protection under labor law."
+  },
+  {
+    "question": "What is the role of the Labour Inspection Authority (Arbeidstilsynet)?",
+    "answer": "To ensure safe and legal working conditions."
+  },
+  {
+    "question": "What must employers ensure regarding workplace safety?",
+    "answer": "A safe and healthy working environment."
+  },
+  {
+    "question": "What does “familieliv” emphasize in Norwegian society?",
+    "answer": "Equality, shared responsibility, and children’s rights."
+  },
+  {
+    "question": "Are men and women expected to share household responsibilities?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is cohabitation (“samboerskap”)?",
+    "answer": "Living together without being married."
+  },
+  {
+    "question": "Is cohabitation socially accepted in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is marriage based on in Norwegian law?",
+    "answer": "Free consent between two people."
+  },
+  {
+    "question": "Is forced marriage legal in Norway?",
+    "answer": "No."
+  },
+  {
+    "question": "What age must you be to marry in Norway?",
+    "answer": "18 years."
+  },
+  {
+    "question": "Are same-sex marriages legal in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What rights do children have in family life?",
+    "answer": "The right to care, security, and participation."
+  },
+  {
+    "question": "What principle guides decisions involving children?",
+    "answer": "The best interests of the child."
+  },
+  {
+    "question": "What does “helsefremmende arbeid” mean?",
+    "answer": "Health-promoting and preventive work."
+  },
+  {
+    "question": "What responsibility do individuals have for their own health?",
+    "answer": "To make healthy choices and seek help when needed."
+  },
+  {
+    "question": "What is mental health recognized as in Norway?",
+    "answer": "An important part of overall health."
+  },
+  {
+    "question": "Are health services equally accessible to everyone?",
+    "answer": "Yes, based on need."
+  },
+  {
+    "question": "What is the purpose of vaccination programs?",
+    "answer": "To prevent serious diseases."
+  },
+  {
+    "question": "Can patients choose whether to accept treatment?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What does patient confidentiality mean?",
+    "answer": "Health information is private and protected."
+  },
+  {
+    "question": "What is substance abuse treated as in Norway?",
+    "answer": "A health issue."
+  },
+  {
+    "question": "What is the goal of public health policy?",
+    "answer": "To improve population health and reduce inequality."
+  },
+  {
+    "question": "What is emergency preparedness meant to protect against?",
+    "answer": "Accidents, crises, and natural disasters."
+  },
+  {
+    "question": "What does “rettsstat” mean?",
+    "answer": "A state governed by the rule of law."
+  },
+  {
+    "question": "What does equality before the law mean?",
+    "answer": "Everyone is treated the same under the law."
+  },
+  {
+    "question": "Who enforces the law in Norway?",
+    "answer": "The police and courts."
+  },
+  {
+    "question": "Are courts independent in Norway?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is the role of the judiciary?",
+    "answer": "To interpret laws and resolve disputes."
+  },
+  {
+    "question": "What does freedom of assembly mean?",
+    "answer": "The right to gather peacefully."
+  },
+  {
+    "question": "Can freedom of expression be limited?",
+    "answer": "Yes, by law in certain cases (e.g. hate speech)."
+  },
+  {
+    "question": "What is the purpose of punishment in Norway?",
+    "answer": "Rehabilitation and protection of society."
+  },
+  {
+    "question": "What does “strafferett” refer to?",
+    "answer": "Criminal law."
+  },
+  {
+    "question": "What is the age of criminal responsibility in Norway?",
+    "answer": "15 years."
+  },
+  {
+    "question": "What is included in the Education, skills and the labour market section on samfunnskunnskap.no?",
+    "answer": "Texts about school and education, working life, critical thinking, and digital judgement.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What is New in Norway about on samfunnskunnskap.no?",
+    "answer": "Information for newcomers about everyday life and society in Norway.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What topic in the curriculum deals with Families?",
+    "answer": "Family life, roles, and family support systems.\nSamfunnskunnskap"
+  },
+  {
+    "question": "Which section teaches about Leisure activities in Norway?",
+    "answer": "The Family, health and daily life category.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What does the Health section explain?",
+    "answer": "How health services work and people’s rights in the health system.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What is included in Personal finances on the curriculum?",
+    "answer": "Budgeting, money management, and financial rights and duties.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What does “The right to a free and independent life” refer to?",
+    "answer": "Rights for people with disabilities and independence in daily life.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What does This is Norway cover?",
+    "answer": "Norwegian society, culture, geography, and values.\nSamfunnskunnskap"
+  },
+  {
+    "question": "Which section is about History on samfunnskunnskap.no?",
+    "answer": "Norway’s past, including key events and development.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What topics are included under Human rights and democracy?",
+    "answer": "Rights and freedoms in Norway, and how democratic society works.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What does Sustainability in the curriculum refer to?",
+    "answer": "Environmental protection, resources, and sustainable development.\nSamfunnskunnskap"
+  },
+  {
+    "question": "The curriculum on samfunnskunnskap.no is designed for which group?",
+    "answer": "Adult immigrants learning about Norwegian society.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What must you have knowledge about to pass the social studies test?",
+    "answer": "Norwegian society, including education, work, family, and Norway’s past and present.\nHK-dir"
+  },
+  {
+    "question": "How many hours is the social studies curriculum designed to cover?",
+    "answer": "It is based on a 75-hour curriculum.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What is a good way to prepare for the test?",
+    "answer": "Read and discuss the texts on samfunnskunnskap.no.\nHK-dir"
+  },
+  {
+    "question": "What type of questions are on the social studies test?",
+    "answer": "Mostly multiple-choice questions.\nHK-dir"
+  },
+  {
+    "question": "How long do you have to complete the test?",
+    "answer": "Up to 60 minutes.\nHK-dir"
+  },
+  {
+    "question": "How many correct answers do you need to pass?",
+    "answer": "At least 26 correct answers.\nHK-dir\n(Official site says you need a majority correct — many study resources also teach 29 correct as a target.)"
+  },
+  {
+    "question": "Can the social studies test be taken in languages other than Norwegian?",
+    "answer": "Yes — you can choose one of many languages.\nHK-dir"
+  },
+  {
+    "question": "If you want to use the test for citizenship, in what language must you take it?",
+    "answer": "In Norwegian.\nHK-dir"
+  },
+  {
+    "question": "Who decides when and where the test is held?",
+    "answer": "The local municipality test centre.\nHK-dir"
+  },
+  {
+    "question": "Can you get help to register for the test?",
+    "answer": "Yes — contact your test centre or municipality.\nHK-dir"
+  },
+  {
+    "question": "What might your municipality pay for once if you have a right to the test?",
+    "answer": "One free attempt at the social studies test.\nHK-dir"
+  },
+  {
+    "question": "What does kritisk tenkning mean?",
+    "answer": "Critical thinking and digital judgement.\nSamfunnskunnskap"
+  },
+  {
+    "question": "Why is digital judgement important?",
+    "answer": "To assess information and sources online responsibly.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What is the purpose of learning about Working life?",
+    "answer": "To understand jobs, rights, and employment in Norway.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What does school and education include?",
+    "answer": "Norwegian school system levels and education options.\nSamfunnskunnskap"
+  },
+  {
+    "question": "In the curriculum, why is family life included?",
+    "answer": "To understand everyday family roles, support, and rights.\nSamfunnskunnskap"
+  },
+  {
+    "question": "Why does the test cover Norway before and now?",
+    "answer": "To learn about Norwegian history and development.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What is one theme under Human rights and democracy?",
+    "answer": "Freedom of expression.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What does sustainability teach about?",
+    "answer": "Environmental protection and sustainable society.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What kind of tasks can you practice on samfunnskunnskap.no?",
+    "answer": "Tasks related to the texts to support learning.\nHK-dir"
+  },
+  {
+    "question": "What is one strategy to prepare well for the test?",
+    "answer": "Read all curriculum sections thoroughly.\nHK-dir"
+  },
+  {
+    "question": "What does Norge før og nå literally translate to?",
+    "answer": "Norway before and now.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What do the texts on samfunnskunnskap.no try to do with examples?",
+    "answer": "Show differences and similarities with your own experiences.\nSamfunnskunnskap"
+  },
+  {
+    "question": "Why might discussion help your preparation?",
+    "answer": "It deepens understanding of society topics.\nHK-dir"
+  },
+  {
+    "question": "What type of content does Norway’s Working life section include?",
+    "answer": "Rights and duties of workers and how the labour market functions.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What rights are emphasized in Norwegian society content?",
+    "answer": "Human rights and equality.\nSamfunnskunnskap"
+  },
+  {
+    "question": "What might the History section include?",
+    "answer": "Key historical periods like Viking Age, union with Sweden, and independence."
+  },
+  {
+    "question": "What does Barn og familie help you understand?",
+    "answer": "Children’s rights and family support systems."
+  },
+  {
+    "question": "What does Leisure in Norway often involve?",
+    "answer": "Outdoor life, culture, sports, and activities."
+  },
+  {
+    "question": "What is one right in Norway’s democracy?",
+    "answer": "Equal treatment under the law."
+  },
+  {
+    "question": "What does Stortinget refer to?",
+    "answer": "Norway’s national parliament."
+  },
+  {
+    "question": "How often are parliamentary elections held?",
+    "answer": "Every four years."
+  },
+  {
+    "question": "What does kommune refer to?",
+    "answer": "A local municipality."
+  },
+  {
+    "question": "Why are taxes important?",
+    "answer": "They fund public services."
+  },
+  {
+    "question": "What is Trygdeordninger?",
+    "answer": "Welfare and social security benefits."
+  },
+  {
+    "question": "What does helsetjeneste mean?",
+    "answer": "Health services."
+  },
+  {
+    "question": "What does skoleplikt mean?",
+    "answer": "Compulsory schooling."
+  },
+  {
+    "question": "What is videregående opplæring?",
+    "answer": "Upper secondary education."
+  },
+  {
+    "question": "What is yrkeskompetanse?",
+    "answer": "Vocational qualification."
+  },
+  {
+    "question": "What is foreldrepermisjon?",
+    "answer": "Parental leave."
+  },
+  {
+    "question": "What does ungdom mean?",
+    "answer": "Youth."
+  },
+  {
+    "question": "What is demokratisk deltakelse?",
+    "answer": "Participating in democracy."
+  },
+  {
+    "question": "What does ytringsfrihet mean?",
+    "answer": "Freedom of expression."
+  },
+  {
+    "question": "What is likestilling?",
+    "answer": "Equality."
+  },
+  {
+    "question": "What does personlig økonomi help you learn?",
+    "answer": "How to manage personal finances."
+  },
+  {
+    "question": "Why is kritisk tenkning taught?",
+    "answer": "To be a critical consumer of information."
+  },
+  {
+    "question": "What does samfunnsverdier mean?",
+    "answer": "Social values like respect and equality."
+  },
+  {
+    "question": "What does “medvirkning” mean for children in Norway?",
+    "answer": "Children have the right to express their opinions and be heard."
+  },
+  {
+    "question": "At what age do children have the right to be heard in decisions affecting them?",
+    "answer": "As soon as they are able to form their own opinions."
+  },
+  {
+    "question": "What is the purpose of the Children Act (Barneloven)?",
+    "answer": "To regulate parents’ responsibilities and children’s rights."
+  },
+  {
+    "question": "What is shared parental responsibility?",
+    "answer": "Both parents have responsibility for the child after separation."
+  },
+  {
+    "question": "Who decides custody if parents disagree?",
+    "answer": "The courts."
+  },
+  {
+    "question": "What is mediation required for when parents separate?",
+    "answer": "To agree on arrangements for children."
+  },
+  {
+    "question": "What does “familievernkontor” provide?",
+    "answer": "Counseling and mediation for families."
+  },
+  {
+    "question": "What is domestic violence considered in Norway?",
+    "answer": "A serious crime."
+  },
+  {
+    "question": "Is violence within the family ever accepted?",
+    "answer": "No."
+  },
+  {
+    "question": "What support is available for victims of violence?",
+    "answer": "Shelters, healthcare, police, and social services."
+  },
+  {
+    "question": "What does “helsekompetanse” mean?",
+    "answer": "The ability to understand and use health information."
+  },
+  {
+    "question": "What is preventive healthcare?",
+    "answer": "Measures to prevent illness and promote health."
+  },
+  {
+    "question": "What is the purpose of school health services?",
+    "answer": "To support children’s physical and mental health."
+  },
+  {
+    "question": "Who pays for most healthcare services in Norway?",
+    "answer": "The public sector through taxes."
+  },
+  {
+    "question": "Can residents choose their own hospital?",
+    "answer": "Yes, within the public system."
+  },
+  {
+    "question": "What is patient autonomy?",
+    "answer": "The right to make decisions about one’s own treatment."
+  },
+  {
+    "question": "Can patients access their medical records?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What does confidentiality protect?",
+    "answer": "Personal and sensitive health information."
+  },
+  {
+    "question": "What is rehabilitation aimed at?",
+    "answer": "Helping people regain function and independence."
+  },
+  {
+    "question": "What does “folkehelse” mean?",
+    "answer": "Public health."
+  },
+  {
+    "question": "What is Norway’s approach to alcohol regulation?",
+    "answer": "Strict regulation to protect public health."
+  },
+  {
+    "question": "What is Vinmonopolet?",
+    "answer": "The state-owned store selling wine and spirits."
+  },
+  {
+    "question": "Why does Norway regulate alcohol sales?",
+    "answer": "To reduce harm and health risks."
+  },
+  {
+    "question": "What is the legal age for buying beer in Norway?",
+    "answer": "18 years."
+  },
+  {
+    "question": "What is the legal age for buying wine and spirits?",
+    "answer": "20 years."
+  },
+  {
+    "question": "What is tobacco policy focused on?",
+    "answer": "Preventing smoking and protecting public health."
+  },
+  {
+    "question": "Is smoking allowed in indoor public places?",
+    "answer": "No."
+  },
+  {
+    "question": "What does public health policy aim to reduce?",
+    "answer": "Social health inequalities."
+  },
+  {
+    "question": "What is mental healthcare integrated into?",
+    "answer": "The public health system."
+  },
+  {
+    "question": "How is addiction treated in Norway?",
+    "answer": "As a health issue, not only a crime."
+  },
+  {
+    "question": "What does “statsmakt” mean?",
+    "answer": "State power."
+  },
+  {
+    "question": "What are the three branches of government in Norway?",
+    "answer": "Legislative, executive, and judicial."
+  },
+  {
+    "question": "Which branch is the Storting part of?",
+    "answer": "The legislative branch."
+  },
+  {
+    "question": "Which branch does the government belong to?",
+    "answer": "The executive branch."
+  },
+  {
+    "question": "Which branch do the courts belong to?",
+    "answer": "The judicial branch."
+  },
+  {
+    "question": "What limits government power in Norway?",
+    "answer": "The Constitution and the rule of law."
+  },
+  {
+    "question": "What is constitutional protection?",
+    "answer": "Rights safeguarded by the Constitution."
+  },
+  {
+    "question": "What does “maktdeling” mean?",
+    "answer": "Separation of powers."
+  },
+  {
+    "question": "Why is separation of powers important?",
+    "answer": "To prevent abuse of power."
+  },
+  {
+    "question": "Who can vote in parliamentary elections?",
+    "answer": "Norwegian citizens aged 18 or older."
+  },
+  {
+    "question": "What does political participation include besides voting?",
+    "answer": "Joining parties, debates, and civil organizations."
+  },
+  {
+    "question": "What is freedom of association?",
+    "answer": "The right to join organizations and groups."
+  },
+  {
+    "question": "Is membership in political parties voluntary?",
+    "answer": "Yes."
+  },
+  {
+    "question": "What is civil society?",
+    "answer": "Organizations outside the state and market."
+  },
+  {
+    "question": "What role do NGOs play in Norway?",
+    "answer": "Advocacy, services, and democratic participation."
+  },
+  {
+    "question": "What does transparency in government mean?",
+    "answer": "Openness and access to information."
+  },
+  {
+    "question": "What is the right to access public documents called?",
+    "answer": "Freedom of information."
+  },
+  {
+    "question": "Why is trust important in Norwegian society?",
+    "answer": "It supports cooperation and democracy."
+  },
+  {
+    "question": "What does “samfunnsdeltakelse” mean?",
+    "answer": "Participation in society."
+  },
+  {
+    "question": "Why is active citizenship encouraged?",
+    "answer": "To strengthen democracy and social cohesion."
+  },
+  {
+    "question": "What is fastlegeordningen?",
+    "answer": "The system that assigns a regular general practitioner to every resident."
+  },
+  {
+    "question": "What is the purpose of the social studies curriculum for adult immigrants?",
+    "answer": "To teach essential knowledge about Norwegian society, rights, duties, and daily life."
+  }
+]
