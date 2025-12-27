@@ -9,8 +9,7 @@ const elements = {
   emptyHint: document.querySelector("[data-empty-hint]"),
   totals: {
     total: document.querySelector("[data-total]"),
-    remaining: document.querySelector("[data-remaining]"),
-    due: document.querySelector("[data-due]")
+    reviewed: document.querySelector("[data-reviewed]")
   }
 };
 
@@ -116,9 +115,10 @@ function updateStatus(payload) {
   }
 
   if (payload.rated) {
-    const { rating, state } = payload.rated;
+    const { rating, queuePosition } = payload.rated;
     const label = ratingLabels[rating] ?? rating;
-    elements.lastAction.textContent = `${label} · saved`;
+    const queueInfo = typeof queuePosition === "number" ? `queued #${queuePosition}` : "saved";
+    elements.lastAction.textContent = `${label} · ${queueInfo}`;
     elements.nextReview.textContent = payload.card ? "Ready now" : "—";
     return;
   }
@@ -138,8 +138,7 @@ function renderMeta(meta) {
     return;
   }
   elements.totals.total.textContent = meta.total ?? 0;
-  elements.totals.remaining.textContent = meta.remaining ?? 0;
-  elements.totals.due.textContent = meta.dueNow ?? 0;
+  elements.totals.reviewed.textContent = meta.reviewed ?? 0;
 }
 
 function setBusy(state, message) {

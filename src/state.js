@@ -9,6 +9,9 @@ const CARD_REINSERT_OFFSETS = Object.freeze({
   normal: 15,
   hard: 5
 });
+const EASY_REVIEW_BONUS = 10;
+const NORMAL_REVIEW_ADJUSTMENT = 1;
+const LEGACY_REVIEW_LIMIT = 100;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -32,9 +35,8 @@ export async function createScheduler() {
   function computeMeta() {
     const total = cards.length;
     const remaining = state.queue.length;
-    const dueNow = remaining > 0 ? 1 : 0;
-
-    return { total, remaining, dueNow };
+    const reviewed = countTotalReviews(state.cards);
+    return { total, remaining, reviewed };
   }
 
   function selectNext() {
@@ -100,21 +102,24 @@ export async function createScheduler() {
     const now = Date.now();
 
     removeCardFromQueue(state.queue, numericCardId);
-    const insertIndex = getReinsertIndex(normalizedRating, state.queue.length);
+    const insertIndex = getReinsertIndex(normalizedRating, state.queue.length, currentState);
     state.queue.splice(insertIndex, 0, numericCardId);
 
-    currentState.lastReviewed = new Date(now).toISOString();
-    currentState.lastRating = normalizedRating;
-    currentState.reviewCount = (currentState.reviewCount ?? 0) + 1;
+    if (!Array.isArray(currentState.reviews)) {
+      currentState.reviews = [];
+    }
+    currentState.reviews.push(normalizedRating);
     state.cards[key] = currentState;
-    state.updatedAt = currentState.lastReviewed;
+    state.updatedAt = new Date(now).toISOString();
     await saveState(state);
 
     return buildResponse(selectNext(), {
       rated: {
         id: numericCardId,
         rating: normalizedRating,
-        state: toClientState(state, numericCardId)
+        state: toClientState(state, numericCardId),
+        queueIndex: insertIndex,
+        queuePosition: insertIndex + 1
       }
     });
   }
@@ -148,7 +153,7 @@ async function loadState() {
     return {
       version: parsed.version ?? DEFAULT_STATE.version,
       updatedAt: parsed.updatedAt ?? DEFAULT_STATE.updatedAt,
-      cards: parsed.cards ?? {},
+      cards: normalizeCardStateMap(parsed.cards),
       queue: Array.isArray(parsed.queue) ? parsed.queue.map((value) => Number(value)) : []
     };
   } catch (error) {
@@ -170,11 +175,7 @@ function getStoredState(state, cardId) {
 }
 
 function getDefaultCardState() {
-  return {
-    reviewCount: 0,
-    lastReviewed: null,
-    lastRating: null
-  };
+  return { reviews: [] };
 }
 
 function buildCardIndex(cards) {
@@ -189,7 +190,7 @@ function normalizeRatingOption(input) {
   return ratingAliases[safeValue] ?? safeValue;
 }
 
-function getReinsertIndex(rating, queueLength) {
+function getReinsertIndex(rating, queueLength, cardState = null) {
   const fallback = CARD_REINSERT_OFFSETS.normal ?? queueLength;
   const rawOffset = CARD_REINSERT_OFFSETS[rating];
   if (rawOffset === undefined) {
@@ -198,8 +199,41 @@ function getReinsertIndex(rating, queueLength) {
   if (!Number.isFinite(rawOffset)) {
     return queueLength;
   }
-  const offset = Math.max(Math.floor(rawOffset), 0);
+  let offset = Math.max(Math.floor(rawOffset), 0);
+  const stats = summarizeReviewHistory(cardState);
+
+  if (rating === "easy") {
+    offset += stats.easy * EASY_REVIEW_BONUS;
+  } else if (rating === "hard") {
+  } else if (rating === "normal") {
+    if (stats.hard > (stats.normal + stats.easy)) {
+      offset -= (stats.hard - (stats.normal + stats.easy)) * NORMAL_REVIEW_ADJUSTMENT;
+    }
+    if (stats.easy > (stats.hard + stats.normal)) {
+      offset += (stats.easy - (stats.hard + stats.normal)) * NORMAL_REVIEW_ADJUSTMENT;
+    }
+
+    offset = Math.max(offset, 5);
+    offset = Math.min(offset, 30);
+  }
+
+  offset = Math.max(offset, 1);
   return Math.min(offset, queueLength);
+}
+
+function summarizeReviewHistory(cardState) {
+  const reviews = Array.isArray(cardState?.reviews) ? cardState.reviews : [];
+  const stats = { easy: 0, normal: 0, hard: 0 };
+  for (const review of reviews) {
+    if (review === "easy") {
+      stats.easy += 1;
+    } else if (review === "normal") {
+      stats.normal += 1;
+    } else if (review === "hard") {
+      stats.hard += 1;
+    }
+  }
+  return stats;
 }
 
 function removeCardFromQueue(queue, cardId) {
@@ -258,5 +292,68 @@ function toClientState(state, cardId) {
   if (!snapshot) {
     return getDefaultCardState();
   }
-  return { ...snapshot };
+  const reviews = Array.isArray(snapshot.reviews) ? [...snapshot.reviews] : [];
+  return { reviews };
+}
+
+function normalizeCardStateMap(rawCards) {
+  if (!rawCards || typeof rawCards !== "object") {
+    return {};
+  }
+  const normalized = {};
+  for (const [key, snapshot] of Object.entries(rawCards)) {
+    normalized[key] = normalizeReviewSnapshot(snapshot);
+  }
+  return normalized;
+}
+
+function normalizeReviewSnapshot(snapshot) {
+  if (snapshot && typeof snapshot === "object" && Array.isArray(snapshot.reviews)) {
+    return { reviews: sanitizeReviews(snapshot.reviews) };
+  }
+  if (snapshot && typeof snapshot === "object") {
+    return upgradeLegacySnapshot(snapshot);
+  }
+  return getDefaultCardState();
+}
+
+function countTotalReviews(cardStates) {
+  if (!cardStates || typeof cardStates !== "object") {
+    return 0;
+  }
+  let sum = 0;
+  for (const snapshot of Object.values(cardStates)) {
+    if (Array.isArray(snapshot?.reviews)) {
+      sum += snapshot.reviews.length;
+    }
+  }
+  return sum;
+}
+
+function sanitizeReviews(values) {
+  if (!Array.isArray(values)) {
+    return [];
+  }
+  const sanitized = [];
+  for (const value of values) {
+    if (typeof value !== "string") {
+      continue;
+    }
+    const normalized = normalizeRatingOption(value);
+    if (typeof normalized === "string" && allowedRatings.has(normalized)) {
+      sanitized.push(normalized);
+    }
+  }
+  return sanitized;
+}
+
+function upgradeLegacySnapshot(snapshot) {
+  const rating = typeof snapshot.lastRating === "string" ? normalizeRatingOption(snapshot.lastRating) : null;
+  if (!rating || !allowedRatings.has(rating)) {
+    return getDefaultCardState();
+  }
+  const count = Number(snapshot.reviewCount);
+  const repeat = Number.isFinite(count) && count > 0 ? Math.min(Math.trunc(count), LEGACY_REVIEW_LIMIT) : 1;
+  const reviews = Array(repeat).fill(rating);
+  return { reviews };
 }
