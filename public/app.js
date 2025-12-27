@@ -10,7 +10,6 @@ const elements = {
   totals: {
     total: document.querySelector("[data-total]"),
     remaining: document.querySelector("[data-remaining]"),
-    retired: document.querySelector("[data-retired]"),
     due: document.querySelector("[data-due]")
   }
 };
@@ -119,18 +118,19 @@ function updateStatus(payload) {
   if (payload.rated) {
     const { rating, state } = payload.rated;
     const label = ratingLabels[rating] ?? rating;
-    const nextText = state?.retired
-      ? "Card retired"
-      : describeDue(state?.dueAt);
-
-    elements.lastAction.textContent = `${label} · ${nextText}`;
-    elements.nextReview.textContent = nextText;
-  } else if (payload.card?.state?.dueAt) {
-    elements.nextReview.textContent = describeDue(payload.card.state.dueAt);
-  } else {
-    elements.nextReview.textContent = "—";
-    elements.lastAction.textContent = "—";
+    elements.lastAction.textContent = `${label} · saved`;
+    elements.nextReview.textContent = payload.card ? "Ready now" : "—";
+    return;
   }
+
+  if (payload.card) {
+    elements.nextReview.textContent = "Ready now";
+    elements.lastAction.textContent = "—";
+    return;
+  }
+
+  elements.nextReview.textContent = "—";
+  elements.lastAction.textContent = "—";
 }
 
 function renderMeta(meta) {
@@ -139,7 +139,6 @@ function renderMeta(meta) {
   }
   elements.totals.total.textContent = meta.total ?? 0;
   elements.totals.remaining.textContent = meta.remaining ?? 0;
-  elements.totals.retired.textContent = meta.retired ?? 0;
   elements.totals.due.textContent = meta.dueNow ?? 0;
 }
 
@@ -187,27 +186,4 @@ async function parseResponse(response) {
   return response.json();
 }
 
-function describeDue(isoString) {
-  if (!isoString) {
-    return "Ready now";
-  }
-  const due = new Date(isoString);
-  const delta = due.getTime() - Date.now();
-  if (!Number.isFinite(delta)) {
-    return "Scheduled";
-  }
-  if (delta <= 0) {
-    return "Ready now";
-  }
-
-  const minutes = Math.round(delta / 60000);
-  if (minutes < 60) {
-    return `in ${minutes} min`;
-  }
-  const hours = minutes / 60;
-  if (hours < 24) {
-    return `in ${hours.toFixed(1)} h`;
-  }
-  const days = hours / 24;
-  return `in ${days.toFixed(1)} d`;
-}
+// No due-date metadata is provided anymore, so the UI just reports readiness.

@@ -32,10 +32,9 @@ export async function createScheduler() {
   function computeMeta() {
     const total = cards.length;
     const remaining = state.queue.length;
-    const retired = Math.max(total - remaining, 0);
     const dueNow = remaining > 0 ? 1 : 0;
 
-    return { total, remaining, retired, dueNow };
+    return { total, remaining, dueNow };
   }
 
   function selectNext() {
@@ -103,10 +102,6 @@ export async function createScheduler() {
     removeCardFromQueue(state.queue, numericCardId);
     const insertIndex = getReinsertIndex(normalizedRating, state.queue.length);
     state.queue.splice(insertIndex, 0, numericCardId);
-
-    currentState.retired = false;
-    currentState.intervalDays = 0;
-    currentState.dueAt = null;
 
     currentState.lastReviewed = new Date(now).toISOString();
     currentState.lastRating = normalizedRating;
@@ -176,9 +171,6 @@ function getStoredState(state, cardId) {
 
 function getDefaultCardState() {
   return {
-    intervalDays: 0,
-    dueAt: null,
-    retired: false,
     reviewCount: 0,
     lastReviewed: null,
     lastRating: null
