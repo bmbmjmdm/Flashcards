@@ -5,12 +5,12 @@ import { fileURLToPath } from "url";
 const DEFAULT_STATE = Object.freeze({ version: 2, updatedAt: null, cards: {}, queue: [] });
 const CARD_REINSERT_OFFSETS = Object.freeze({
   trivial: Number.POSITIVE_INFINITY,
-  easy: 30,
+  easy: 15,
   normal: 15,
   hard: 5
 });
 const EASY_REVIEW_BONUS = 15;
-const NORMAL_REVIEW_ADJUSTMENT = 1;
+const NORMAL_REVIEW_ADJUSTMENT = 0;
 const LEGACY_REVIEW_LIMIT = 100;
 
 const __filename = fileURLToPath(import.meta.url);
