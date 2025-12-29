@@ -9,7 +9,7 @@ const CARD_REINSERT_OFFSETS = Object.freeze({
   normal: 15,
   hard: 5
 });
-const EASY_REVIEW_BONUS = 10;
+const EASY_REVIEW_BONUS = 15;
 const NORMAL_REVIEW_ADJUSTMENT = 1;
 const LEGACY_REVIEW_LIMIT = 100;
 
@@ -203,18 +203,9 @@ function getReinsertIndex(rating, queueLength, cardState = null) {
   const stats = summarizeReviewHistory(cardState);
 
   if (rating === "easy") {
-    offset += stats.easy * EASY_REVIEW_BONUS;
+    offset += EASY_REVIEW_BONUS * Math.pow(2, stats.easy);
   } else if (rating === "hard") {
   } else if (rating === "normal") {
-    if (stats.hard > (stats.normal + stats.easy)) {
-      offset -= (stats.hard - (stats.normal + stats.easy)) * NORMAL_REVIEW_ADJUSTMENT;
-    }
-    if (stats.easy > (stats.hard + stats.normal)) {
-      offset += (stats.easy - (stats.hard + stats.normal)) * NORMAL_REVIEW_ADJUSTMENT;
-    }
-
-    offset = Math.max(offset, 5);
-    offset = Math.min(offset, 30);
   }
 
   offset = Math.max(offset, 1);
