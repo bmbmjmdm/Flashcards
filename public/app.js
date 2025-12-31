@@ -9,7 +9,9 @@ const elements = {
   emptyHint: document.querySelector("[data-empty-hint]"),
   totals: {
     total: document.querySelector("[data-total]"),
-    reviewed: document.querySelector("[data-reviewed]")
+    reviewed: document.querySelector("[data-reviewed]"),
+    seen: document.querySelector("[data-seen]"),
+    completed: document.querySelector("[data-completed]")
   }
 };
 
@@ -139,6 +141,8 @@ function renderMeta(meta) {
   }
   elements.totals.total.textContent = meta.total ?? 0;
   elements.totals.reviewed.textContent = meta.reviewed ?? 0;
+  elements.totals.seen.textContent = meta.seen ?? 0;
+  elements.totals.completed.textContent = meta.completed ?? 0;
 }
 
 function setBusy(state, message) {

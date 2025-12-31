@@ -36,7 +36,9 @@ export async function createScheduler() {
     const total = cards.length;
     const remaining = state.queue.length;
     const reviewed = countTotalReviews(state.cards);
-    return { total, remaining, reviewed };
+    const seen = countCardsSeen(state.cards);
+    const completed = countTrivialCards(state.cards);
+    return { total, remaining, reviewed, seen, completed };
   }
 
   function selectNext() {
@@ -319,6 +321,32 @@ function countTotalReviews(cardStates) {
     }
   }
   return sum;
+}
+
+function countCardsSeen(cardStates) {
+  if (!cardStates || typeof cardStates !== "object") {
+    return 0;
+  }
+  let count = 0;
+  for (const snapshot of Object.values(cardStates)) {
+    if (Array.isArray(snapshot?.reviews) && snapshot.reviews.length > 0) {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+function countTrivialCards(cardStates) {
+  if (!cardStates || typeof cardStates !== "object") {
+    return 0;
+  }
+  let count = 0;
+  for (const snapshot of Object.values(cardStates)) {
+    if (Array.isArray(snapshot?.reviews) && snapshot.reviews.includes("trivial")) {
+      count += 1;
+    }
+  }
+  return count;
 }
 
 function sanitizeReviews(values) {
