@@ -342,7 +342,7 @@ function countTrivialCards(cardStates) {
   }
   let count = 0;
   for (const snapshot of Object.values(cardStates)) {
-    if (Array.isArray(snapshot?.reviews) && snapshot.reviews.includes("trivial")) {
+    if (Array.isArray(snapshot?.reviews) && (snapshot.reviews.includes("trivial") || snapshot.reviews.filter((r) => r === "easy").length > 4)) {
       count += 1;
     }
   }

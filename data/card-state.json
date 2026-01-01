@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "updatedAt": "2025-12-31T08:40:36.410Z",
+  "updatedAt": "2026-01-01T16:36:38.511Z",
   "cards": {
     "1": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -17,6 +18,7 @@
     },
     "3": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -58,17 +60,20 @@
     "9": {
       "reviews": [
         "easy",
+        "easy",
         "easy"
       ]
     },
     "10": {
       "reviews": [
         "easy",
+        "easy",
         "easy"
       ]
     },
     "11": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -90,6 +95,7 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -107,11 +113,13 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "18": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -121,11 +129,13 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "20": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -135,11 +145,13 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "22": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -149,11 +161,13 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "24": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -162,6 +176,7 @@
     "25": {
       "reviews": [
         "normal",
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -183,6 +198,7 @@
     },
     "28": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -215,7 +231,8 @@
     "33": {
       "reviews": [
         "easy",
-        "easy"
+        "easy",
+        "trivial"
       ]
     },
     "34": {
@@ -223,6 +240,7 @@
         "hard",
         "easy",
         "normal",
+        "easy",
         "easy"
       ]
     },
@@ -233,6 +251,7 @@
     },
     "36": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -249,6 +268,7 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -256,7 +276,8 @@
       "reviews": [
         "normal",
         "easy",
-        "easy"
+        "easy",
+        "trivial"
       ]
     },
     "40": {
@@ -267,6 +288,7 @@
     },
     "41": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -315,6 +337,8 @@
       "reviews": [
         "normal",
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
@@ -322,6 +346,8 @@
       "reviews": [
         "normal",
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
@@ -330,6 +356,8 @@
         "hard",
         "normal",
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
@@ -337,6 +365,8 @@
       "reviews": [
         "normal",
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
@@ -349,24 +379,32 @@
     "54": {
       "reviews": [
         "easy",
-        "normal"
+        "normal",
+        "easy",
+        "easy"
       ]
     },
     "55": {
       "reviews": [
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
     "56": {
       "reviews": [
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
     "57": {
       "reviews": [
         "normal",
+        "easy",
+        "easy",
         "easy"
       ]
     },
@@ -392,93 +430,286 @@
     },
     "62": {
       "reviews": [
+        "normal",
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "63": {
+      "reviews": [
+        "normal",
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "64": {
+      "reviews": [
+        "normal",
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "65": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "66": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "67": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "68": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "69": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "70": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "71": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "72": {
+      "reviews": [
+        "normal",
+        "normal",
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "73": {
+      "reviews": [
+        "easy",
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "74": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "75": {
+      "reviews": [
+        "normal",
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "76": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "77": {
+      "reviews": [
+        "normal",
+        "normal",
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "78": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "79": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "80": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "81": {
+      "reviews": [
+        "easy",
+        "normal",
+        "easy"
+      ]
+    },
+    "82": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "83": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "84": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "85": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "86": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "87": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "88": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "89": {
+      "reviews": [
+        "easy",
+        "easy",
+        "easy"
+      ]
+    },
+    "90": {
+      "reviews": [
+        "easy",
+        "easy"
+      ]
+    },
+    "91": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "92": {
+      "reviews": [
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "93": {
+      "reviews": [
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "94": {
+      "reviews": [
+        "normal",
+        "easy"
+      ]
+    },
+    "95": {
+      "reviews": [
+        "normal",
+        "easy"
+      ]
+    },
+    "96": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "97": {
+      "reviews": [
+        "normal",
+        "easy"
+      ]
+    },
+    "98": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "99": {
+      "reviews": [
+        "normal"
+      ]
+    },
+    "100": {
+      "reviews": [
         "normal"
       ]
     }
   },
   "queue": [
-    9,
-    39,
-    34,
-    10,
-    55,
-    54,
-    63,
-    33,
-    64,
-    49,
-    50,
-    65,
-    52,
-    66,
-    67,
-    62,
-    68,
-    51,
-    69,
-    70,
-    71,
-    72,
-    56,
-    57,
-    73,
-    74,
-    75,
-    76,
-    77,
-    78,
-    79,
-    80,
     81,
-    82,
-    83,
-    84,
-    85,
-    86,
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    11,
-    14,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    94,
-    95,
-    96,
-    28,
-    97,
-    1,
-    36,
-    38,
-    98,
-    25,
-    41,
-    99,
-    3,
-    100,
     101,
     102,
     5,
+    90,
     42,
     6,
     7,
     8,
+    99,
+    9,
+    94,
+    95,
+    75,
     103,
+    100,
+    34,
+    10,
+    72,
     104,
+    92,
     105,
+    93,
     106,
+    97,
     107,
     108,
+    77,
     109,
     110,
     111,
@@ -489,20 +720,44 @@
     116,
     117,
     118,
+    55,
+    54,
     119,
+    49,
+    50,
+    52,
+    51,
     120,
     121,
+    56,
+    57,
     122,
     123,
     124,
     125,
+    65,
+    66,
+    67,
+    62,
+    68,
+    70,
+    63,
+    64,
     126,
+    74,
     127,
+    78,
     128,
     129,
+    82,
     130,
     131,
+    85,
+    73,
+    87,
+    88,
     132,
+    89,
     133,
     134,
     135,
@@ -544,8 +799,25 @@
     171,
     172,
     173,
+    11,
+    14,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
     174,
+    28,
+    1,
+    36,
+    38,
     175,
+    25,
+    41,
+    3,
     176,
     177,
     178,
@@ -714,6 +986,19 @@
     59,
     53,
     60,
-    61
+    61,
+    39,
+    33,
+    69,
+    71,
+    76,
+    79,
+    80,
+    83,
+    84,
+    86,
+    91,
+    96,
+    98
   ]
 }
