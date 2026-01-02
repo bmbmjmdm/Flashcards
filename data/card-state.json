@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-01-01T16:36:38.511Z",
+  "updatedAt": "2026-01-02T17:17:25.683Z",
   "cards": {
     "1": {
       "reviews": [
@@ -33,11 +33,13 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "6": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -47,11 +49,13 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "8": {
       "reviews": [
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -61,6 +65,7 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -68,7 +73,8 @@
       "reviews": [
         "easy",
         "easy",
-        "easy"
+        "easy",
+        "trivial"
       ]
     },
     "11": {
@@ -241,6 +247,7 @@
         "easy",
         "normal",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -298,6 +305,7 @@
       "reviews": [
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -339,6 +347,7 @@
         "normal",
         "easy",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -346,6 +355,7 @@
       "reviews": [
         "normal",
         "normal",
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -358,13 +368,15 @@
         "normal",
         "easy",
         "easy",
-        "easy"
+        "easy",
+        "normal"
       ]
     },
     "52": {
       "reviews": [
         "normal",
         "normal",
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -381,12 +393,14 @@
         "easy",
         "normal",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "55": {
       "reviews": [
         "normal",
+        "easy",
         "easy",
         "easy",
         "easy"
@@ -503,6 +517,7 @@
         "normal",
         "normal",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -526,6 +541,7 @@
         "normal",
         "normal",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -539,6 +555,7 @@
         "normal",
         "normal",
         "normal",
+        "easy",
         "easy",
         "easy"
       ]
@@ -564,6 +581,7 @@
       "reviews": [
         "easy",
         "normal",
+        "easy",
         "easy"
       ]
     },
@@ -620,6 +638,7 @@
     "90": {
       "reviews": [
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -632,6 +651,7 @@
       "reviews": [
         "normal",
         "easy",
+        "easy",
         "easy"
       ]
     },
@@ -639,18 +659,21 @@
       "reviews": [
         "normal",
         "easy",
+        "easy",
         "easy"
       ]
     },
     "94": {
       "reviews": [
         "normal",
+        "easy",
         "easy"
       ]
     },
     "95": {
       "reviews": [
         "normal",
+        "easy",
         "easy"
       ]
     },
@@ -662,7 +685,8 @@
     "97": {
       "reviews": [
         "normal",
-        "easy"
+        "easy",
+        "trivial"
       ]
     },
     "98": {
@@ -672,70 +696,155 @@
     },
     "99": {
       "reviews": [
-        "normal"
+        "normal",
+        "normal",
+        "easy"
       ]
     },
     "100": {
       "reviews": [
+        "normal",
+        "easy",
         "normal"
+      ]
+    },
+    "101": {
+      "reviews": [
+        "normal",
+        "easy",
+        "easy"
+      ]
+    },
+    "102": {
+      "reviews": [
+        "easy",
+        "trivial"
+      ]
+    },
+    "103": {
+      "reviews": [
+        "normal",
+        "easy"
+      ]
+    },
+    "104": {
+      "reviews": [
+        "normal",
+        "easy"
+      ]
+    },
+    "105": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "106": {
+      "reviews": [
+        "normal",
+        "easy"
+      ]
+    },
+    "107": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "108": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "109": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "110": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "111": {
+      "reviews": [
+        "normal",
+        "normal"
+      ]
+    },
+    "112": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "113": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "114": {
+      "reviews": [
+        "trivial"
+      ]
+    },
+    "115": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "116": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "117": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "118": {
+      "reviews": [
+        "easy"
+      ]
+    },
+    "119": {
+      "reviews": [
+        "normal"
+      ]
+    },
+    "120": {
+      "reviews": [
+        "trivial"
       ]
     }
   },
   "queue": [
-    81,
-    101,
-    102,
-    5,
-    90,
-    42,
-    6,
-    7,
-    8,
+    105,
+    121,
     99,
-    9,
-    94,
-    95,
-    75,
+    56,
+    57,
+    108,
+    122,
+    119,
     103,
     100,
-    34,
-    10,
-    72,
-    104,
-    92,
-    105,
-    93,
-    106,
-    97,
-    107,
-    108,
-    77,
+    111,
     109,
     110,
-    111,
     112,
+    51,
+    123,
+    104,
     113,
-    114,
+    124,
     115,
+    106,
     116,
     117,
     118,
-    55,
-    54,
-    119,
-    49,
-    50,
-    52,
-    51,
-    120,
-    121,
-    56,
-    57,
-    122,
-    123,
-    124,
     125,
     65,
+    94,
+    95,
     66,
     67,
     62,
@@ -751,6 +860,7 @@
     129,
     82,
     130,
+    101,
     131,
     85,
     73,
@@ -758,16 +868,23 @@
     88,
     132,
     89,
+    81,
     133,
+    90,
     134,
     135,
     136,
     137,
     138,
+    75,
     139,
     140,
+    72,
+    92,
+    93,
     141,
     142,
+    77,
     143,
     144,
     145,
@@ -818,11 +935,23 @@
     25,
     41,
     3,
+    5,
+    42,
+    6,
+    7,
+    8,
+    9,
+    34,
     176,
     177,
     178,
     179,
     180,
+    55,
+    54,
+    49,
+    50,
+    52,
     181,
     182,
     183,
@@ -999,6 +1128,12 @@
     86,
     91,
     96,
-    98
+    98,
+    10,
+    97,
+    107,
+    102,
+    114,
+    120
   ]
 }
