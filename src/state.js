@@ -2,7 +2,13 @@ import { promises as fs } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 
-const DEFAULT_STATE = Object.freeze({ version: 2, updatedAt: null, cards: {}, queue: [] });
+const DEFAULT_STATE = Object.freeze({
+  version: 2,
+  updatedAt: null,
+  cards: {},
+  queue: [],
+  sinceFresh: 0
+});
 const CARD_REINSERT_OFFSETS = Object.freeze({
   trivial: Number.POSITIVE_INFINITY,
   easy: 15,
@@ -12,6 +18,7 @@ const CARD_REINSERT_OFFSETS = Object.freeze({
 const EASY_REVIEW_BONUS = 15;
 const NORMAL_REVIEW_ADJUSTMENT = 0;
 const LEGACY_REVIEW_LIMIT = 100;
+const FRESH_CARD_THRESHOLD = 7;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -32,6 +39,12 @@ export async function createScheduler() {
     await saveState(state);
   }
 
+  function persistStateSoon() {
+    saveState(state).catch((error) => {
+      console.error("Failed to save scheduler state:", error.message);
+    });
+  }
+
   function computeMeta() {
     const total = cards.length;
     const remaining = state.queue.length;
@@ -42,6 +55,7 @@ export async function createScheduler() {
   }
 
   function selectNext() {
+    prioritizeFreshCardIfNeeded(state);
     if (!state.queue.length) {
       return null;
     }
@@ -69,6 +83,9 @@ export async function createScheduler() {
   }
 
   function buildResponse(selection, extra = {}) {
+    if (selection?.card) {
+      updateFreshTracking(state, selection.card.id, selection.snapshot);
+    }
     return {
       card: buildCardPayload(selection),
       meta: computeMeta(),
@@ -113,9 +130,9 @@ export async function createScheduler() {
     currentState.reviews.push(normalizedRating);
     state.cards[key] = currentState;
     state.updatedAt = new Date(now).toISOString();
-    await saveState(state);
 
-    return buildResponse(selectNext(), {
+    const nextSelection = selectNext();
+    const response = buildResponse(nextSelection, {
       rated: {
         id: numericCardId,
         rating: normalizedRating,
@@ -124,10 +141,17 @@ export async function createScheduler() {
         queuePosition: insertIndex + 1
       }
     });
+    await saveState(state);
+    return response;
   }
 
   function getNextCard() {
-    return buildResponse(selectNext());
+    const selection = selectNext();
+    const response = buildResponse(selection);
+    if (selection?.card) {
+      persistStateSoon();
+    }
+    return response;
   }
 
   return { getNextCard, rateCard };
@@ -156,7 +180,8 @@ async function loadState() {
       version: parsed.version ?? DEFAULT_STATE.version,
       updatedAt: parsed.updatedAt ?? DEFAULT_STATE.updatedAt,
       cards: normalizeCardStateMap(parsed.cards),
-      queue: Array.isArray(parsed.queue) ? parsed.queue.map((value) => Number(value)) : []
+      queue: Array.isArray(parsed.queue) ? parsed.queue.map((value) => Number(value)) : [],
+      sinceFresh: sanitizeSinceFresh(parsed.sinceFresh)
     };
   } catch (error) {
     if (error.code === "ENOENT") {
@@ -208,6 +233,12 @@ function getReinsertIndex(rating, queueLength, cardState = null) {
     offset += EASY_REVIEW_BONUS * Math.pow(2, stats.easy);
   } else if (rating === "hard") {
   } else if (rating === "normal") {
+    if (Array.isArray(cardState?.reviews)) {
+      const easyIndex = cardState.reviews.indexOf("easy");
+      if (easyIndex !== -1) {
+        cardState.reviews.splice(easyIndex, 1);
+      }
+    }
   }
 
   offset = Math.max(offset, 1);
@@ -375,4 +406,46 @@ function upgradeLegacySnapshot(snapshot) {
   const repeat = Number.isFinite(count) && count > 0 ? Math.min(Math.trunc(count), LEGACY_REVIEW_LIMIT) : 1;
   const reviews = Array(repeat).fill(rating);
   return { reviews };
+}
+
+function sanitizeSinceFresh(value) {
+  return Number.isInteger(value) && value >= 0 ? value : 0;
+}
+
+function isCardFreshSnapshot(snapshot) {
+  return !Array.isArray(snapshot?.reviews) || snapshot.reviews.length === 0;
+}
+
+function isCardFresh(state, cardId) {
+  if (!state) {
+    return true;
+  }
+  const snapshot = state.cards?.[String(cardId)];
+  return isCardFreshSnapshot(snapshot);
+}
+
+function updateFreshTracking(state, cardId, snapshot = null) {
+  if (!state || !Number.isFinite(cardId)) {
+    return;
+  }
+  state.sinceFresh = sanitizeSinceFresh(state.sinceFresh);
+  const referenceSnapshot = snapshot ?? state.cards?.[String(cardId)];
+  const wasFresh = isCardFreshSnapshot(referenceSnapshot);
+  state.sinceFresh = wasFresh ? 0 : state.sinceFresh + 1;
+}
+
+function prioritizeFreshCardIfNeeded(state) {
+  if (!state || !Array.isArray(state.queue) || !state.queue.length) {
+    return;
+  }
+  state.sinceFresh = sanitizeSinceFresh(state.sinceFresh);
+  if (state.sinceFresh < FRESH_CARD_THRESHOLD) {
+    return;
+  }
+  const nextIndex = state.queue.findIndex((cardId) => isCardFresh(state, cardId));
+  if (nextIndex <= 0) {
+    return;
+  }
+  const [cardId] = state.queue.splice(nextIndex, 1);
+  state.queue.unshift(cardId);
 }
