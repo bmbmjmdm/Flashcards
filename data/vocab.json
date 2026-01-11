@@ -1,0 +1,802 @@
+[
+  {
+    "question": "oppmøte",
+    "answer": "attendance"
+  },
+  {
+    "question": "grunnskolen",
+    "answer": "primary and lower secondary school (grades 1–10)"
+  },
+  {
+    "question": "grunnskoleopplæringen",
+    "answer": "primary and lower secondary education"
+  },
+  {
+    "question": "foreldre",
+    "answer": "parents"
+  },
+  {
+    "question": "plikt",
+    "answer": "duty, obligation"
+  },
+  {
+    "question": "delta",
+    "answer": "to participate"
+  },
+  {
+    "question": "lærer",
+    "answer": "teacher"
+  },
+  {
+    "question": "elev",
+    "answer": "pupil, student (school)"
+  },
+  {
+    "question": "NAV",
+    "answer": "Norwegian Labour and Welfare Administration (NAV)"
+  },
+  {
+    "question": "rolle",
+    "answer": "role"
+  },
+  {
+    "question": "forvalte",
+    "answer": "to manage, administer"
+  },
+  {
+    "question": "trygdeordning",
+    "answer": "social security benefit scheme"
+  },
+  {
+    "question": "støtteordning",
+    "answer": "support scheme, benefit arrangement"
+  },
+  {
+    "question": "arbeidsledig",
+    "answer": "unemployed"
+  },
+  {
+    "question": "dagpenger",
+    "answer": "unemployment benefits (daily allowance)"
+  },
+  {
+    "question": "vilkår",
+    "answer": "conditions, requirements"
+  },
+  {
+    "question": "alderspensjon",
+    "answer": "old-age pension"
+  },
+  {
+    "question": "folketrygden",
+    "answer": "the National Insurance Scheme (folketrygden)"
+  },
+  {
+    "question": "medlem",
+    "answer": "member"
+  },
+  {
+    "question": "statsminister",
+    "answer": "prime minister"
+  },
+  {
+    "question": "utlandet",
+    "answer": "abroad, foreign countries"
+  },
+  {
+    "question": "kommunestyrevalg",
+    "answer": "municipal council election"
+  },
+  {
+    "question": "stortingsvalg",
+    "answer": "parliamentary election (Storting election)"
+  },
+  {
+    "question": "lokalt nivå",
+    "answer": "local level"
+  },
+  {
+    "question": "nasjonalt nivå",
+    "answer": "national level"
+  },
+  {
+    "question": "utlending",
+    "answer": "foreigner, non‑citizen"
+  },
+  {
+    "question": "valg",
+    "answer": "election; choice"
+  },
+  {
+    "question": "frie og hemmelige valg",
+    "answer": "free and secret elections"
+  },
+  {
+    "question": "helsekontroll",
+    "answer": "health check‑up"
+  },
+  {
+    "question": "barnevaksiner",
+    "answer": "childhood vaccines"
+  },
+  {
+    "question": "helsestasjon",
+    "answer": "child health clinic / health centre"
+  },
+  {
+    "question": "helsetjenesten",
+    "answer": "health services"
+  },
+  {
+    "question": "oppfølging",
+    "answer": "follow‑up"
+  },
+  {
+    "question": "vektkontroll",
+    "answer": "weight monitoring"
+  },
+  {
+    "question": "egenandel",
+    "answer": "co‑payment, patient’s share of costs"
+  },
+  {
+    "question": "legevakt",
+    "answer": "emergency medical service, out‑of‑hours doctor"
+  },
+  {
+    "question": "ekteskap",
+    "answer": "marriage"
+  },
+  {
+    "question": "tvangsekteskap",
+    "answer": "forced marriage"
+  },
+  {
+    "question": "ektefelle",
+    "answer": "spouse"
+  },
+  {
+    "question": "skilsmisse",
+    "answer": "divorce"
+  },
+  {
+    "question": "separasjon",
+    "answer": "separation (legal)"
+  },
+  {
+    "question": "hendelse",
+    "answer": "incident, event"
+  },
+  {
+    "question": "statsborgerskap",
+    "answer": "citizenship"
+  },
+  {
+    "question": "inntektsskatt",
+    "answer": "income tax"
+  },
+  {
+    "question": "skattepliktig",
+    "answer": "liable to tax, taxable"
+  },
+  {
+    "question": "diskriminering",
+    "answer": "discrimination"
+  },
+  {
+    "question": "kjønn",
+    "answer": "gender, sex"
+  },
+  {
+    "question": "etnisitet",
+    "answer": "ethnicity"
+  },
+  {
+    "question": "Arbeidstilsynet",
+    "answer": "Norwegian Labour Inspection Authority"
+  },
+  {
+    "question": "arbeidsgiver",
+    "answer": "employer"
+  },
+  {
+    "question": "verneombud",
+    "answer": "safety representative at the workplace"
+  },
+  {
+    "question": "arbeidsplass",
+    "answer": "workplace"
+  },
+  {
+    "question": "helse-, miljø- og sikkerhetsregler (HMS)",
+    "answer": "health, environment and safety regulations (HSE)"
+  },
+  {
+    "question": "mobbing",
+    "answer": "bullying"
+  },
+  {
+    "question": "tillitsvalgt",
+    "answer": "union representative, elected representative"
+  },
+  {
+    "question": "Utlendingsdirektoratet (UDI)",
+    "answer": "Directorate of Immigration (UDI)"
+  },
+  {
+    "question": "oppholdstillatelse",
+    "answer": "residence permit"
+  },
+  {
+    "question": "asyl",
+    "answer": "asylum"
+  },
+  {
+    "question": "nyankommen",
+    "answer": "newly arrived"
+  },
+  {
+    "question": "flyktning",
+    "answer": "refugee"
+  },
+  {
+    "question": "innvandrer",
+    "answer": "immigrant"
+  },
+  {
+    "question": "introduksjonsprogram",
+    "answer": "introduction programme for newcomers"
+  },
+  {
+    "question": "norskopplæring",
+    "answer": "Norwegian language training"
+  },
+  {
+    "question": "tiltak",
+    "answer": "measure, initiative"
+  },
+  {
+    "question": "folkeavstemning",
+    "answer": "referendum"
+  },
+  {
+    "question": "forvaltning",
+    "answer": "public administration"
+  },
+  {
+    "question": "hjemmel i lov",
+    "answer": "legal basis in law"
+  },
+  {
+    "question": "blandingsøkonomi",
+    "answer": "mixed economy"
+  },
+  {
+    "question": "næringsliv",
+    "answer": "business sector, industry"
+  },
+  {
+    "question": "offentlig sektor",
+    "answer": "public sector"
+  },
+  {
+    "question": "regulert marked",
+    "answer": "regulated market"
+  },
+  {
+    "question": "tilhørighet",
+    "answer": "sense of belonging"
+  },
+  {
+    "question": "skatteinntekter",
+    "answer": "tax revenues"
+  },
+  {
+    "question": "velferdsgoder",
+    "answer": "welfare benefits, welfare services"
+  },
+  {
+    "question": "arbeidsmiljøloven",
+    "answer": "the Working Environment Act"
+  },
+  {
+    "question": "arbeidstaker",
+    "answer": "employee, worker"
+  },
+  {
+    "question": "personopplysninger",
+    "answer": "personal data, personal information"
+  },
+  {
+    "question": "forsiktig",
+    "answer": "careful, cautious"
+  },
+  {
+    "question": "tolk",
+    "answer": "interpreter"
+  },
+  {
+    "question": "læreplan",
+    "answer": "curriculum"
+  },
+  {
+    "question": "juridisk",
+    "answer": "legal (relating to law)"
+  },
+  {
+    "question": "avtale",
+    "answer": "agreement, contract"
+  },
+  {
+    "question": "videregående opplæring",
+    "answer": "upper secondary education"
+  },
+  {
+    "question": "husholdning",
+    "answer": "household"
+  },
+  {
+    "question": "barneverntjenesten",
+    "answer": "child welfare service"
+  },
+  {
+    "question": "åttende klasse",
+    "answer": "eighth grade"
+  },
+  {
+    "question": "vikingtiden",
+    "answer": "the Viking Age"
+  },
+  {
+    "question": "konstitusjonelt monarki",
+    "answer": "constitutional monarchy"
+  },
+  {
+    "question": "Grunnloven",
+    "answer": "the Constitution of Norway"
+  },
+  {
+    "question": "folkevalgt",
+    "answer": "elected by the people"
+  },
+  {
+    "question": "Stortinget",
+    "answer": "the Norwegian Parliament (Storting)"
+  },
+  {
+    "question": "statsbudsjett",
+    "answer": "national budget, state budget"
+  },
+  {
+    "question": "regjeringen",
+    "answer": "the government (cabinet)"
+  },
+  {
+    "question": "parlamentarisme",
+    "answer": "parliamentary system"
+  },
+  {
+    "question": "stemmerett",
+    "answer": "right to vote, suffrage"
+  },
+  {
+    "question": "fylke",
+    "answer": "county (administrative region)"
+  },
+  {
+    "question": "Sametinget",
+    "answer": "the Sami Parliament"
+  },
+  {
+    "question": "interesser",
+    "answer": "interests"
+  },
+  {
+    "question": "rettsstat",
+    "answer": "state governed by the rule of law"
+  },
+  {
+    "question": "domstol",
+    "answer": "court of law"
+  },
+  {
+    "question": "ytringsfrihet",
+    "answer": "freedom of expression"
+  },
+  {
+    "question": "religionsfrihet",
+    "answer": "freedom of religion"
+  },
+  {
+    "question": "velferdsstat",
+    "answer": "welfare state"
+  },
+  {
+    "question": "trygdeordning",
+    "answer": "social security scheme"
+  },
+  {
+    "question": "alderspensjon",
+    "answer": "old‑age pension"
+  },
+  {
+    "question": "sykepenger",
+    "answer": "sickness benefit, sick pay"
+  },
+  {
+    "question": "fylkeskommune",
+    "answer": "county municipality"
+  },
+  {
+    "question": "obligatorisk",
+    "answer": "compulsory, mandatory"
+  },
+  {
+    "question": "fastlegeordning",
+    "answer": "general practitioner (GP) scheme"
+  },
+  {
+    "question": "akutt helsehjelp",
+    "answer": "emergency health care"
+  },
+  {
+    "question": "arbeidskontrakt",
+    "answer": "employment contract"
+  },
+  {
+    "question": "lønn",
+    "answer": "wages, salary"
+  },
+  {
+    "question": "arbeidstid",
+    "answer": "working hours"
+  },
+  {
+    "question": "sykmelding",
+    "answer": "sick note, medical certificate"
+  },
+  {
+    "question": "tariffavtale",
+    "answer": "collective agreement (wages and conditions)"
+  },
+  {
+    "question": "verneplikt",
+    "answer": "compulsory military service"
+  },
+  {
+    "question": "sesjon",
+    "answer": "conscription assessment (military session)"
+  },
+  {
+    "question": "førstegangstjeneste",
+    "answer": "initial military service"
+  },
+  {
+    "question": "skadelige forhold",
+    "answer": "harmful conditions"
+  },
+  {
+    "question": "foreldrepermisjon",
+    "answer": "parental leave"
+  },
+  {
+    "question": "økonomisk støtte",
+    "answer": "financial support"
+  },
+  {
+    "question": "likestilling",
+    "answer": "gender equality, equality between women and men"
+  },
+  {
+    "question": "urfolk",
+    "answer": "indigenous people"
+  },
+  {
+    "question": "nasjonaldag",
+    "answer": "national day"
+  },
+  {
+    "question": "Riksforsamlingen på Eidsvoll",
+    "answer": "the National Assembly at Eidsvoll (1814)"
+  },
+  {
+    "question": "politisk parti",
+    "answer": "political party"
+  },
+  {
+    "question": "frivillig organisasjon",
+    "answer": "voluntary organisation"
+  },
+  {
+    "question": "demokratiske spilleregler",
+    "answer": "democratic rules of the game"
+  },
+  {
+    "question": "botid",
+    "answer": "period of residence"
+  },
+  {
+    "question": "vandel",
+    "answer": "conduct, criminal record"
+  },
+  {
+    "question": "offentlig sykehus",
+    "answer": "public hospital"
+  },
+  {
+    "question": "egenandel",
+    "answer": "patient co‑payment"
+  },
+  {
+    "question": "kommunestyret",
+    "answer": "municipal council"
+  },
+  {
+    "question": "administrasjonen",
+    "answer": "the administration (municipal administration)"
+  },
+  {
+    "question": "Statsforvalteren",
+    "answer": "the County Governor (state representative in the county)"
+  },
+  {
+    "question": "konstitusjonelt monarki og parlamentarisk demokrati",
+    "answer": "constitutional monarchy and parliamentary democracy"
+  },
+  {
+    "question": "utenrikspolitikk",
+    "answer": "foreign policy"
+  },
+  {
+    "question": "kommuneplan",
+    "answer": "municipal master plan"
+  },
+  {
+    "question": "arealer",
+    "answer": "areas (land areas)"
+  },
+  {
+    "question": "boligbygging",
+    "answer": "housing construction"
+  },
+  {
+    "question": "leiekontrakt",
+    "answer": "rental contract, tenancy agreement"
+  },
+  {
+    "question": "rettigheter",
+    "answer": "rights"
+  },
+  {
+    "question": "plikter",
+    "answer": "duties, obligations"
+  },
+  {
+    "question": "ansvarsforsikring",
+    "answer": "liability insurance"
+  },
+  {
+    "question": "skader",
+    "answer": "damages, injuries"
+  },
+  {
+    "question": "midlertidig arbeidsufør",
+    "answer": "temporarily unable to work (due to illness)"
+  },
+  {
+    "question": "foreldreansvar",
+    "answer": "parental responsibility"
+  },
+  {
+    "question": "omsorgsansvar",
+    "answer": "care responsibility"
+  },
+  {
+    "question": "svart arbeid",
+    "answer": "undeclared work, working off the books"
+  },
+  {
+    "question": "avgifter",
+    "answer": "fees, taxes, duties"
+  },
+  {
+    "question": "kontantstøtteordning",
+    "answer": "cash‑for‑care benefit scheme"
+  },
+  {
+    "question": "heltids barnehage",
+    "answer": "full‑time kindergarten"
+  },
+  {
+    "question": "brennevin",
+    "answer": "spirits, strong alcohol"
+  },
+  {
+    "question": "Vinmonopolet",
+    "answer": "state alcohol monopoly shops (Vinmonopolet)"
+  },
+  {
+    "question": "frivillig arbeid",
+    "answer": "voluntary work, volunteering"
+  },
+  {
+    "question": "ulønnet innsats",
+    "answer": "unpaid effort"
+  },
+  {
+    "question": "sortere avfall",
+    "answer": "to sort waste"
+  },
+  {
+    "question": "resirkulere",
+    "answer": "to recycle"
+  },
+  {
+    "question": "miljøbelastning",
+    "answer": "environmental impact, environmental burden"
+  },
+  {
+    "question": "utnytte ressurser",
+    "answer": "to make use of resources"
+  },
+  {
+    "question": "klima- og miljøpolitikk",
+    "answer": "climate and environmental policy"
+  },
+  {
+    "question": "klimagassutslipp",
+    "answer": "greenhouse gas emissions"
+  },
+  {
+    "question": "internasjonale avtaler",
+    "answer": "international agreements"
+  },
+  {
+    "question": "personvernregler",
+    "answer": "data protection rules"
+  },
+  {
+    "question": "misbruk",
+    "answer": "misuse, abuse"
+  },
+  {
+    "question": "frie og uavhengige medier",
+    "answer": "free and independent media"
+  },
+  {
+    "question": "hatefulle ytringer",
+    "answer": "hate speech, hateful expressions"
+  },
+  {
+    "question": "oppfordring til vold",
+    "answer": "incitement to violence"
+  },
+  {
+    "question": "lov",
+    "answer": "law"
+  },
+  {
+    "question": "lover",
+    "answer": "laws"
+  },
+  {
+    "question": "regel",
+    "answer": "rule"
+  },
+  {
+    "question": "regler",
+    "answer": "rules"
+  },
+  {
+    "question": "samfunn",
+    "answer": "society"
+  },
+  {
+    "question": "samfunnet",
+    "answer": "the society"
+  },
+  {
+    "question": "samfunnsliv",
+    "answer": "community and social life"
+  },
+  {
+    "question": "myndigheter",
+    "answer": "authorities"
+  },
+  {
+    "question": "innbygger",
+    "answer": "inhabitant, citizen (of a country)"
+  },
+  {
+    "question": "innbyggerne",
+    "answer": "the inhabitants, the citizens"
+  },
+  {
+    "question": "ordning",
+    "answer": "scheme, arrangement"
+  },
+  {
+    "question": "offentlig",
+    "answer": "public"
+  },
+  {
+    "question": "privat",
+    "answer": "private"
+  },
+  {
+    "question": "viktig",
+    "answer": "important"
+  },
+  {
+    "question": "vanligvis",
+    "answer": "usually"
+  },
+  {
+    "question": "normalt",
+    "answer": "normally"
+  },
+  {
+    "question": "nødvendig",
+    "answer": "necessary"
+  },
+  {
+    "question": "ulovlig",
+    "answer": "illegal"
+  },
+  {
+    "question": "lovlig",
+    "answer": "legal"
+  },
+  {
+    "question": "midlertidig",
+    "answer": "temporary"
+  },
+  {
+    "question": "permanent",
+    "answer": "permanent"
+  },
+  {
+    "question": "økonomisk",
+    "answer": "economic, financial"
+  },
+  {
+    "question": "politisk",
+    "answer": "political"
+  },
+  {
+    "question": "sosial",
+    "answer": "social"
+  },
+  {
+    "question": "kulturell",
+    "answer": "cultural"
+  },
+  {
+    "question": "religion",
+    "answer": "religion"
+  },
+  {
+    "question": "arbeidsliv",
+    "answer": "working life, employment life"
+  },
+  {
+    "question": "utdanning",
+    "answer": "education"
+  },
+  {
+    "question": "deltakelse",
+    "answer": "participation"
+  },
+  {
+    "question": "ansvar",
+    "answer": "responsibility"
+  },
+  {
+    "question": "rettighet",
+    "answer": "a right (entitlement)"
+  },
+  {
+    "question": "gjelder",
+    "answer": "applies, is valid for"
+  }
+]

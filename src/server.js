@@ -11,7 +11,19 @@ const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 async function bootstrap() {
   const app = express();
-  const scheduler = await createScheduler();
+  const schedulers = {
+    social: await createScheduler("social"),
+    vocab: await createScheduler("vocab")
+  };
+
+  function getDeckKey(req) {
+    const raw = (req.query.deck ?? "social").toString().toLowerCase();
+    if (raw === "vocab" || raw === "vocabulary") {
+      return "vocab";
+    }
+    // Default and aliases fall back to social studies deck.
+    return "social";
+  }
 
   app.use(express.json());
   app.use(express.static(PUBLIC_DIR));
@@ -20,8 +32,10 @@ async function bootstrap() {
     res.json({ status: "ok", timestamp: new Date().toISOString() });
   });
 
-  app.get("/api/cards/next", (_req, res, next) => {
+  app.get("/api/cards/next", (req, res, next) => {
     try {
+      const deckKey = getDeckKey(req);
+      const scheduler = schedulers[deckKey] ?? schedulers.social;
       res.json(scheduler.getNextCard());
     } catch (error) {
       next(error);
@@ -30,6 +44,8 @@ async function bootstrap() {
 
   app.post("/api/cards/:id/rate", async (req, res, next) => {
     try {
+      const deckKey = getDeckKey(req);
+      const scheduler = schedulers[deckKey] ?? schedulers.social;
       const cardId = Number(req.params.id);
       const rating = req.body?.rating;
 

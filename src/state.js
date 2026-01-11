@@ -24,23 +24,35 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, "..");
 const DATA_DIR = path.join(ROOT_DIR, "data");
-const DECK_FILE = path.join(DATA_DIR, "socialstudies.json");
-const STATE_FILE = path.join(DATA_DIR, "card-state.json");
+
+const DECK_CONFIGS = Object.freeze({
+  social: {
+    deckFile: path.join(DATA_DIR, "socialstudies.json"),
+    // Keep existing filename so current progress is preserved.
+    stateFile: path.join(DATA_DIR, "card-state.json")
+  },
+  vocab: {
+    deckFile: path.join(DATA_DIR, "vocab.json"),
+    stateFile: path.join(DATA_DIR, "card-state-vocab.json")
+  }
+});
 
 const allowedRatings = new Set(["trivial", "easy", "normal", "hard"]);
 const ratingAliases = Object.freeze({ medium: "normal" });
 
-export async function createScheduler() {
-  const cards = await loadCards();
+export async function createScheduler(deckKey = "social") {
+  const normalizedKey = typeof deckKey === "string" ? deckKey.toLowerCase() : "social";
+  const config = DECK_CONFIGS[normalizedKey] ?? DECK_CONFIGS.social;
+  const cards = await loadCards(config.deckFile);
   const cardIndex = buildCardIndex(cards);
-  const state = await loadState();
+  const state = await loadState(config.stateFile);
   const queueUpdated = syncQueueWithDeck(state, cards);
   if (queueUpdated) {
-    await saveState(state);
+    await saveState(config.stateFile, state);
   }
 
   function persistStateSoon() {
-    saveState(state).catch((error) => {
+    saveState(config.stateFile, state).catch((error) => {
       console.error("Failed to save scheduler state:", error.message);
     });
   }
@@ -141,7 +153,7 @@ export async function createScheduler() {
         queuePosition: insertIndex + 1
       }
     });
-    await saveState(state);
+    await saveState(config.stateFile, state);
     return response;
   }
 
@@ -157,9 +169,9 @@ export async function createScheduler() {
   return { getNextCard, rateCard };
 }
 
-async function loadCards() {
+async function loadCards(deckFile) {
   try {
-    const raw = await fs.readFile(DECK_FILE, "utf-8");
+    const raw = await fs.readFile(deckFile, "utf-8");
     const parsed = JSON.parse(raw);
     return parsed.map((item, index) => ({
       id: index + 1,
@@ -167,14 +179,14 @@ async function loadCards() {
       answer: (item.answer ?? "").trim()
     }));
   } catch (error) {
-    error.message = `Unable to load flashcards from ${DECK_FILE}: ${error.message}`;
+    error.message = `Unable to load flashcards from ${deckFile}: ${error.message}`;
     throw error;
   }
 }
 
-async function loadState() {
+async function loadState(stateFile) {
   try {
-    const raw = await fs.readFile(STATE_FILE, "utf-8");
+    const raw = await fs.readFile(stateFile, "utf-8");
     const parsed = JSON.parse(raw);
     return {
       version: parsed.version ?? DEFAULT_STATE.version,
@@ -185,16 +197,16 @@ async function loadState() {
     };
   } catch (error) {
     if (error.code === "ENOENT") {
-      await saveState(structuredClone(DEFAULT_STATE));
+      await saveState(stateFile, structuredClone(DEFAULT_STATE));
       return structuredClone(DEFAULT_STATE);
     }
-    error.message = `Unable to load scheduler state: ${error.message}`;
+    error.message = `Unable to load scheduler state from ${stateFile}: ${error.message}`;
     throw error;
   }
 }
 
-async function saveState(content) {
-  await fs.writeFile(STATE_FILE, JSON.stringify(content, null, 2), "utf-8");
+async function saveState(stateFile, content) {
+  await fs.writeFile(stateFile, JSON.stringify(content, null, 2), "utf-8");
 }
 
 function getStoredState(state, cardId) {

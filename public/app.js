@@ -7,6 +7,9 @@ const elements = {
   lastAction: document.querySelector("[data-last-action]"),
   cardHint: document.querySelector("[data-card-hint]"),
   emptyHint: document.querySelector("[data-empty-hint]"),
+   deckTitle: document.querySelector("[data-deck-title]"),
+   deckDescription: document.querySelector("[data-deck-description]"),
+   deckPicker: document.querySelector("[data-deck-picker]"),
   totals: {
     total: document.querySelector("[data-total]"),
     reviewed: document.querySelector("[data-reviewed]"),
@@ -27,6 +30,7 @@ let currentCard = null;
 let busy = false;
 let pressStartTime = 0;
 const FLIP_CLICK_THRESHOLD_MS = 250;
+let currentDeck = "social";
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -57,6 +61,18 @@ elements.card.addEventListener("mouseup", (event) => {
     elements.card.classList.toggle("show-answer");
   }
 });
+
+if (elements.deckPicker) {
+  elements.deckPicker.addEventListener("change", () => {
+    const value = elements.deckPicker.value || "social";
+    currentDeck = value === "vocab" ? "vocab" : "social";
+    updateDeckUi();
+    currentCard = null;
+    loadNextCard();
+  });
+}
+
+updateDeckUi();
 
 init();
 
@@ -175,17 +191,22 @@ function showError(message) {
 }
 
 async function apiGet(url) {
-  const response = await fetch(url);
+  const response = await fetch(withDeck(url));
   return parseResponse(response);
 }
 
 async function apiPost(url, body) {
-  const response = await fetch(url, {
+  const response = await fetch(withDeck(url), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body)
   });
   return parseResponse(response);
+}
+
+function withDeck(url) {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}deck=${encodeURIComponent(currentDeck)}`;
 }
 
 async function parseResponse(response) {
@@ -205,3 +226,19 @@ async function parseResponse(response) {
 }
 
 // No due-date metadata is provided anymore, so the UI just reports readiness.
+
+function updateDeckUi() {
+  if (!elements.deckTitle || !elements.deckDescription || !elements.deckPicker) {
+    return;
+  }
+  elements.deckPicker.value = currentDeck;
+  if (currentDeck === "vocab") {
+    elements.deckTitle.textContent = "Vocabulary Flashcards";
+    elements.deckDescription.textContent =
+      "Practice key Norwegian–English vocabulary related to the social studies test.";
+  } else {
+    elements.deckTitle.textContent = "Social Studies Flashcards";
+    elements.deckDescription.textContent =
+      "Review social studies questions and answers to prepare for the test.";
+  }
+}

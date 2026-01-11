@@ -11,10 +11,10 @@
       <header class="hero">
         <div>
           <p class="eyebrow">Persistent Study Session</p>
-          <h1>Social Studies Flashcards</h1>
-          <p class="lede">
-            Click the card to reveal the answer, then grade yourself. The schedule is saved
-            locally so you can pause anytime and continue exactly where you stopped.
+          <h1 data-deck-title>Flashcards</h1>
+          <p class="lede" data-deck-description>
+            Choose a deck, click the card to reveal the answer, then grade yourself. The schedule
+            is saved so you can pause anytime and continue exactly where you stopped.
           </p>
         </div>
         <div class="meta-grid">
@@ -33,6 +33,13 @@
           <div>
             <span class="label">Completed</span>
             <span class="value" data-completed>0</span>
+          </div>
+          <div>
+            <span class="label">Deck</span>
+            <select data-deck-picker>
+              <option value="social">Social studies</option>
+              <option value="vocab">Vocabulary</option>
+            </select>
           </div>
         </div>
       </header>
