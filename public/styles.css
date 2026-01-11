@@ -95,7 +95,7 @@ main.app-shell {
 .card {
   position: relative;
   width: min(640px, 100%);
-  height: 320px;
+  height: 430px;
   perspective: 1500px;
   cursor: pointer;
 }

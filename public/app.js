@@ -25,6 +25,8 @@ const ratingLabels = {
 
 let currentCard = null;
 let busy = false;
+let pressStartTime = 0;
+const FLIP_CLICK_THRESHOLD_MS = 250;
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -36,11 +38,24 @@ buttons.forEach((button) => {
   });
 });
 
-elements.card.addEventListener("click", () => {
+elements.card.addEventListener("mousedown", (event) => {
+  if (event.button !== 0) {
+    return;
+  }
+  pressStartTime = performance.now();
+});
+
+elements.card.addEventListener("mouseup", (event) => {
+  if (event.button !== 0) {
+    return;
+  }
   if (!currentCard || busy) {
     return;
   }
-  elements.card.classList.toggle("show-answer");
+  const duration = performance.now() - pressStartTime;
+  if (duration <= FLIP_CLICK_THRESHOLD_MS) {
+    elements.card.classList.toggle("show-answer");
+  }
 });
 
 init();
