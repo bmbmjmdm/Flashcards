@@ -1,5 +1,20 @@
 # Social Studies Flashcards
 
+## Quick Reference
+### Data Folder
+- `data/socialstudies.json` is the default deck served to the browser; update or replace it to change the prompt set.
+- `data/card-state.json` stores live spaced-repetition progress and can be deleted (while the server is stopped) to reset the scheduler.
+- `data/vocab.json` plus `data/card-state-vocab.json` hold an alternate vocabulary deck/state if you want to swap content sources.
+
+### Server Modes
+- `npm start` launches the production-like Express server with the current assets.
+- `npm run dev` starts the Nodemon/parcel combo in watch mode for hot reloads across the API and front-end.
+
+## Four-Year Check-In
+- **Standard run:** `npm start` boots the Express server in the current shell; point your browser at http://localhost:3000 once it prints "Server listening".
+- **Hot-reload/dev mode:** `npm run dev` keeps both the server and front-end in watch mode so changes auto-reload; cancel with `Ctrl+C`.
+- **Data source:** both modes read the same deck at `data/socialstudies.json`, so update that file (or drop in a replacement) before launching if you want fresh content.
+
 Local-first flashcard web app tailored to the provided social studies questions. Every time you score yourself, the server persists the schedule so you can stop and resume later without losing place.
 
 ## Features

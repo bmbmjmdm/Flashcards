@@ -18,7 +18,7 @@ const CARD_REINSERT_OFFSETS = Object.freeze({
 const EASY_REVIEW_BONUS = 15;
 const NORMAL_REVIEW_ADJUSTMENT = 0;
 const LEGACY_REVIEW_LIMIT = 100;
-const FRESH_CARD_THRESHOLD = 7;
+const FRESH_CARD_THRESHOLD = 5;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -243,8 +243,7 @@ function getReinsertIndex(rating, queueLength, cardState = null) {
 
   if (rating === "easy") {
     offset += EASY_REVIEW_BONUS * Math.pow(2, stats.easy);
-  } else if (rating === "hard") {
-  } else if (rating === "normal") {
+  } else if (rating === "hard" || rating === "normal") { 
     if (Array.isArray(cardState?.reviews)) {
       const easyIndex = cardState.reviews.indexOf("easy");
       if (easyIndex !== -1) {
@@ -385,8 +384,22 @@ function countTrivialCards(cardStates) {
   }
   let count = 0;
   for (const snapshot of Object.values(cardStates)) {
-    if (Array.isArray(snapshot?.reviews) && (snapshot.reviews.includes("trivial") || snapshot.reviews.filter((r) => r === "easy").length > 4)) {
-      count += 1;
+    const isArray = Array.isArray(snapshot?.reviews);
+    if (isArray) {
+      const hastrivial = snapshot.reviews.includes("trivial");
+      let easyCount = 0
+      for (const rating of snapshot.reviews) {
+        if (rating === "easy") {
+          easyCount += 1;
+        }
+        else {
+          easyCount -= 1;
+          easyCount = Math.max(easyCount, 0);
+        }
+      }
+      if (hastrivial || easyCount > 4) {
+        count += 1;
+      }
     }
   }
   return count;
